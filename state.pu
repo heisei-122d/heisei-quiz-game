@@ -1,0 +1,45 @@
+@startuml state
+
+Top : 「平成クイズ」タイトル画面
+Top : "スタートボタンを押して始めよう！"
+
+Register : ユーザー登録画面
+Register : スマブラ風のUI。最大４名。
+Register : ユーザーが回答ハードを選択。
+Register : "平成を飾るハードで参加だ！"
+
+NewYear : 時代が変わったことを表す扉絵。
+NewYear : 「高度経済成長」「バブル」など
+NewYear : この後全体的な色合い等が変化。
+
+Question : 出題画面。
+Question : 上部に問題、下部に回答画面
+Question : 回答したら画面変わる。制限時間有
+
+Answer : 問題解答画面。
+Answer : 上部に解答、下部に正解・不正解
+
+Result : 結果表示画面。
+Result : 下部に各ユーザーの得点を表示。
+Result : 上部は１位の人のハード紹介画面
+
+Goodbye : 著作権表記や免責表示など
+Goodbye : "遊んでいただきありがとうございました"
+
+
+
+[*] --> Top : ブラウザを開く
+Top -down-> Register: スタートボタンを押す
+Register -down-> NewYear: 全員の選択が完了する
+NewYear -down-> Question: ５秒ほど経過する
+Question -down-> Answer: 制限時間が経過する
+Answer -down-> Result: 31問が終了する
+Result -down-> Goodbye: ５秒ほど経過する
+
+Goodbye -up-> Top: スタッフロールが終了する
+
+Answer -left-> Question: 次の問題に進む
+Answer -left-> NewYear: 5問終わるごとに
+
+
+@enduml
