@@ -1,0 +1,3 @@
+[submodule "consider/layout-sample/bideo.js"]
+	path = consider/layout-sample/bideo.js
+	url = git@github.com:rishabhp/bideo.js.git
