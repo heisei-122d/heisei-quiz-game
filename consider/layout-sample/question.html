@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
+<script src="./jsviews.js" type="text/javascript"></script>
+<script src="./jsrender.js" type="text/javascript"></script>
+<script id="questionBox_tml" type="text/x-jsrender">
+    <div class="question">
+        <p>{{:question}}</p>
+    </div>
+    <div class="mediaContainer">
+        <p><img src="{{:img}}"></p>
+        <p><video src="{{:video}}"></p>
+    </div>
+</script>
+<script id="choiceBox_tml" type="text/x-jsrender">
+    <li>{{:#data}}</li>
+</script>
+<script type="text/javascript">
+    $(function () {
+        var $que = $("#questionBox_tml");
+        var $cho = $("#choiceBox_tml");
+        var data1 = {
+            question:'001', 
+            img:'',
+            video:'',
+            choice:[
+                '2','3'
+            ]
+        };
+        $("#questionBox").append($que.render(data1));
+        $("#choiceBox").append($cho.render(data1.choice));
+    }); 
+</script>
+</head>
+<body>
+    <div id="mainUp">
+        <div id="questionBox"></div>
+        <div id="choiceBox"></div>
+    </div>
+    <div id="result"></div>
+</body>
+</html>
+
+
+
