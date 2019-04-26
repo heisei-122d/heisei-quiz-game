@@ -132,20 +132,47 @@ html, body {
     left: 0;
     right: 0;
     margin: auto;
+    vertical-align: middle;
+    line-height: 70%;
 }
 
 #winnerGraphic{
     display: inline-block;
+    margin: 2.5% 0 0 0;
     height: 80%;
     width: 30%;
     background-color: azure;
+    vertical-align: middle;
 }
 
 #ranking{
     display: inline-block;
+    margin: 2.5% 0 0 0;
     height: 80%;
     width: 60%;
     background-color: peru;
+    vertical-align: middle;
+}
+
+/* result list */
+
+ul, ol {
+  padding: 0;
+  position: relative;
+}
+
+ul li, ol li {
+  color: black;
+  border-left: solid 8px orange;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 1%;/*下のバーとの余白*/
+  line-height: 0.8%;
+  padding: 2%;
+  list-style-type: none!important;
+}
+
+#ranking {
+    
 }
 
 </style>
@@ -159,11 +186,12 @@ html, body {
 	<div id="mainUp">
         <div id="resultBox">
             <div id="winnerGraphic"></div>
-            <div id="ranking">
-                <div id="rank-1th"></div>
-                <div id="rank-2th"></div>
-                <div id="rank-3th"></div>
-                <div id="rank-4th"></div>
+            <ul id="ranking">
+                    ランキング
+                <li id="rank-1th"></li>
+                <li id="rank-2th"></li>
+                <li id="rank-3th"></li>
+                <li id="rank-4th"></li>
             </div>
         </div>
     </div>
