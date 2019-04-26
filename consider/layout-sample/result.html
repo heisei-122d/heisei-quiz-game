@@ -119,6 +119,35 @@ html, body {
   background-size: cover;
   background-position: center;
 }
+
+/* result style */
+#resultBox{
+    position: absolute;
+    display: inline-block;
+    background-color: lightgreen;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#winnerGraphic{
+    display: inline-block;
+    height: 80%;
+    width: 30%;
+    background-color: azure;
+}
+
+#ranking{
+    display: inline-block;
+    height: 80%;
+    width: 60%;
+    background-color: peru;
+}
+
 </style>
 </head>
 <body>
@@ -128,10 +157,13 @@ html, body {
                 <video id="background_video" loop muted autoplay></video>
         </div>
 	<div id="mainUp">
-        <div id="questionBox">
-            <div id="question">あああああああああああああああああああああああああああああああああああああああああ</div>
-            <div id="mediaContainer">
-
+        <div id="resultBox">
+            <div id="winnerGraphic"></div>
+            <div id="ranking">
+                <div id="rank-1th"></div>
+                <div id="rank-2th"></div>
+                <div id="rank-3th"></div>
+                <div id="rank-4th"></div>
             </div>
         </div>
     </div>
