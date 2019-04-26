@@ -1,5 +1,5 @@
 <template>
-    <div id="test">
+    <div>
         <start-button @onClick="initClick()" class="button">start</start-button>
     </div>
 </template>

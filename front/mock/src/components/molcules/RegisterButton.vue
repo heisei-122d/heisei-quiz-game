@@ -1,5 +1,5 @@
 <template>
-    <div id="test">
+    <div >
         <register-button @onClick="addClick()" class="button">register</register-button>
     </div>
 </template>
@@ -13,7 +13,7 @@
         },
         methods:{
             addClick(){
-                //this.$route.push(`/hogehoge`);
+                this.$router.push(`/`);
                 // eslint-disable-next-line
                 console.log('resister');
             }
