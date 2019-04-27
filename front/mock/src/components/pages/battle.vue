@@ -5,28 +5,20 @@
         </div>
         <question-window></question-window>
         <div id="mainBottom">
-            <div class="playerScreen">
-                <div class="playerContainer">
-                        <video id="player1"  loop muted autoplay></video>
-                </div>
-            </div>
-            <div class="playerScreen">
-                    <div class="playerContainer">
-                            <video id="player2"  loop muted autoplay></video>
-                    </div>
-            </div>
-            
+            <player-screen> </player-screen>
         </div>
     </div>
 </template>
 <script>
     import RegisterButton from '../molcules/RegisterButton'
     import QuestionWindow from '../molcules/QuestionWindow'
+    import PlayerScreen from '../molcules/PlayerScreen'
     export default{
         name:'test',
         components:{
             'register-button': RegisterButton,
-            'question-window': QuestionWindow
+            'question-window': QuestionWindow,
+            'player-screen': PlayerScreen
         },
         methods:{
         },
