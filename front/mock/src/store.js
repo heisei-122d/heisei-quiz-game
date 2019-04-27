@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 
 export default new Vuex.Store({
@@ -13,7 +13,9 @@ export default new Vuex.Store({
         button: [
             "start_ps4",
             "A",
-            "B"
+            "B",
+            'C',
+            'D'
         ]
       },
       {
@@ -22,7 +24,9 @@ export default new Vuex.Store({
         button: [
             "start_fc",
             "A",
-            "B"
+            "B",
+            'C',
+            'D'
         ]
       },
       {
@@ -31,61 +35,99 @@ export default new Vuex.Store({
         button: [
             "start_swt",
             "A",
-            "B"
+            "B",
+            "C",
+            "D"
         ]
       }
     ],
-    OnControllerId: [],
     Players:[],
-    PlayersResult:[]
+    PlayersDetails: [
+      {
+        name: "player1",
+        ControllerId: null,
+        online: true,
+        result: 0
+      },
+      {
+        name: "player2",
+        ControllerId: null,
+        online: false,
+        result: 0
+      },
+      {
+        name: "player3",
+        ControllerId: null,
+        online: false
+      },
+      {
+        name:"player4",
+        ControllerId: null,
+        online: false
+      },
+    ]
   },
   getters: {
+    // コントローラーの名前、ID、ボタンの情報が書かれたオブジェクトを返す
     getController(state) {
       return state.Controller
-    },
-    getOnControllerId(state){
-      return state.OnControllerId
     },
     getPlayers(state) {
       return state.Players
     },
-    getPlayersNumber(state){
+    getPlayersNumber(state) {
       return state.Players.length
     },
-    getPlayersResult(state){
-      return state.PlayersResult
+    // プレーヤーの情報が入っているオブジェクトを返す。
+    getPlayersDetails(state) {
+      return state.PlayersDetails
     }
   },
   mutations: {
-    setOnControllerId(state, payload) {
-      state.OnControllerId.push(payload.OnControllerId)
+    setOnlinePlayer(state, payload) {
+      state.PlayersDetails[payload.id].online = true
     },
     setPlayers(state, payload){
       state.Players.push(payload.Players)
     },
     incrementPlayersResult(state, payload) {
-      state.PlayersResult += payload.point
+      state.PlayersDetails[payload.id].result += payload.point
     },
     decrementPlayersResult(state, payload) {
-      state.PlayerResult -= payload.point
+      state.PlayersDetails[payload.id].result -= payload.point
+    },
+    setControllerId(state, payload) {
+      state.PlayersDetails[payload.id].ControllerId = payload.ControllerId
     }
   },
   actions: {
     //実装が終わったら、{commit}をlogで確認してみる
-    UpdateControllerId({ commit }, id){
-      commit('setOnControllerId', { id })
-    },
-    UpdatePlayers({ commit }, playerName){
-      commit('setPlayers', { playerName })
-    },
-    UpdateIncrementPlayersResult({ commit }){
-      commit('incrementPlayersResult', {
-        point: 10
+    UpdateOnlinePlayer({ commit}, {id}) {
+      commit('setOnlinePlayer', {
+        id: id
       })
     },
-    UpdateDecrrementPlayersResult({ commit }){
+    //idにmachineNameを結びつける
+    UpdateMachineName({ commit }, {machineName}){
+      commit('setPlayers', { machineName })
+    },
+    // id
+    UpdateIncrementPlayersResult({ commit },{ id }){
+      commit('incrementPlayersResult', {
+        point: 10,
+        id: id
+      })
+    },
+    UpdateDecrementPlayersResult({ commit },{ id }){
       commit('decrementPlayersResult',{
-        point: 10
+        point: 10,
+        id:id
+      })
+    },
+    updateControllerId({ commit }, { id , ControllerId}){
+      commit('setControllerId',{
+        id: id,
+        ControllerId: ControllerId
       })
     }
   }
