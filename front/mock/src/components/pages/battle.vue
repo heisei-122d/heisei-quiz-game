@@ -3,7 +3,7 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
-        <answer-window></answer-window>
+        <result-window></result-window>
         <div id="mainBottom">
             <player-screen> </player-screen>
         </div>
@@ -14,13 +14,15 @@
     import QuestionWindow from '../molcules/QuestionWindow'
     import PlayerScreen from '../molcules/PlayerScreen'
     import AnswerWindow from '../molcules/AnswerWindow'
+    import ResultWindow from '../molcules/ResultWindow'
     export default{
         name:'test',
         components:{
             'register-button': RegisterButton,
             'question-window': QuestionWindow,
             'player-screen': PlayerScreen,
-            'answer-window': AnswerWindow
+            'answer-window': AnswerWindow,
+            'result-window': ResultWindow
         },
         methods:{
         },
@@ -90,7 +92,7 @@ html, body {
     overflow: hidden;
 }
 
-#mainUp{
+/*#mainUp{
 	background-color:#f86262;
 	height: 30%;
     width: 70%;
@@ -99,44 +101,7 @@ html, body {
     top:20%;
     position: relative;
     z-index: -1;
-}
-
-#questionBox{
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
-    position: relative;
-    background-color: transparent;
-    padding-top: 2%; 
-    height: 30%;
-}
-
-#choiceBox{
-    list-style: none;
-    background-color: transparent;
-    position: relative;
-    height:40%;
-    text-align: center;
-    margin: auto;
-}
-
-#choiceBox li{
-    position: relative;
-    list-style: none;
-    background-color: #333;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    width: 30%;
-    margin: 1% 2%;
-    padding: 6px 4%;
-    left: auto;
-}
-/* #choice1,#choice2{
-}
-#choice3,#choice4{
-} */
+}*/
 
 #mainBottom{
 	background-color:#000000;
