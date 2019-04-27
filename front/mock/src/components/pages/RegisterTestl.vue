@@ -3,15 +3,29 @@
         <div class = "contents">
             <div class= "select">
                 <div id="up">
-                    <img src="../../assets/logo.png"/>
-                    <img src="../../assets/logo.png"/>
-                    <img src="../../assets/logo.png"/>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                        <p>Ready</p>
+                    </div>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                        <p>Ready</p>                    
+                    </div>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                    </div>
                 </div>
                 <p id="title">push button to start</p>
                 <div id="down">
-                    <img src="../../assets/logo.png"/>
-                    <img src="../../assets/logo.png"/>
-                    <img src="../../assets/logo.png"/>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                    </div>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                    </div>
+                    <div class="device">
+                        <img src="../../assets/logo.png"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,6 +89,9 @@
         width: 100%;
         padding: auto;
     }
+    .device{
+        display: inline;
+    }
     .select img{
         padding: 2%;
         margin: 3%;
@@ -82,6 +99,17 @@
         width: auto;
         border-radius: 40px;
         background-color: rgba(0, 0, 0, 0.411);
+    }
+    .device p{
+        position: absolute;
+        font-size: 130px;
+        font-weight: bolder;
+        color: rgba(255, 255, 255, 0.568);
+        top:50%;
+        left:21%;
+        transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
     }
     #up{
         height: 25%;
