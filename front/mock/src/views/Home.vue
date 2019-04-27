@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '../components/pages/test.vue'
+import HelloWorld from '../components/pages/RegisterTestl'
 
 export default {
   name: 'home',
