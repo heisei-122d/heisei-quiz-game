@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Resister from './components/pages/testResister'
-
+import Battle from './components/pages/testBattle'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +16,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: Resister
+    },
+    {
+      path: '/battle',
+      name: 'battle',
+      component: Battle
     }
     /*
     {
