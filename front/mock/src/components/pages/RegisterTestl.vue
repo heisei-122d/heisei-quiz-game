@@ -5,31 +5,37 @@
                 <div class = "frame">
                     <div class = "Images">
                         <div class = "ControllerImg">
-                            <img src="../../assets/logo.png" class="imageSize"/>
-                        </div>
-                        <transition name="demo">
-                            <div class = "NumberImg">
-                                <img :src="setImageSrc" v-if="JudgeImage(0)" class="imageSize"/>
-                            </div>
-                        </transition>
-                    </div>
-                    <div class="Images">
-                        <div class = "ControllerImg">
-                            <img src="../../assets/logo.png" class="imageSize"/>
+                            <img src="../../assets/fc.jpeg" class="imageSize"/>
                         </div>
                         <div class = "NumberImg">
-                            <img :src="setImageSrc"  v-if="JudgeImage(1)" class="imageSize"/>
+                            <img :src="Src[0]" v-if="JudgeImage[0]" class="imageSize">
                         </div>
                     </div>
                     <div class="Images">
                         <div class = "ControllerImg">
-                            <img src="../../assets/logo.png" class="imageSize"/>
+                            <img src="../../assets/sf.jpeg" class="imageSize"/>
                         </div>
-                        <div class = "NumberImg" >
-                            <img :src="setImageSrc" v-if="JudgeImage(2)" class="imageSize"/>
+                        <div class = "NumberImg">
+                            <img :src="Src[1]"  v-if="JudgeImage[1]" class="imageSize"/>
                         </div>
                     </div>
-                </div>
+                    <div class="Images">
+                        <div class = "ControllerImg">
+                            <img src="../../assets/dm.jpg" class="imageSize"/>
+                        </div>
+                        <div class = "NumberImg" >
+                            <img :src="Src[2]" v-if="JudgeImage[2]" class="imageSize">
+                        </div>
+                    </div>
+                    <div class="Images">
+                        <div class = "ControllerImg">
+                            <img src="../../assets/ps.png" class="imageSize"/>
+                        </div>
+                        <div class = "NumberImg" >
+                            <img :src="Src[3]" v-if="JudgeImage[3]" class="imageSize"/>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </div>
     </div>
@@ -40,78 +46,78 @@
         mapGetters,
         mapActions
     } from 'vuex'
-    //import {Mixin} from '../../services/vue.mixins.js'
+    import {Mixin} from '../../services/vue.mixins.js'
 
     export default{
         name:'register',
         mixins:[
+            Mixin
         ],
-        watch: {
-
-        },
         data(){
             return {
-                SetCount: 1
+                ImageSrc : [] ,
+                JudgeImage: [
+                    false,false,false,false
+                ],
+                Src : []
             }
         },
         computed: {
-            setImageSrc() {
-                return require(`../../assets/number${this.SetCount}.jpg`);
-            },
             ...mapGetters({
                 getOnControllerId:'getOnControllerId',
-                getPlayersDetails:'getPlayersDetails'
-            })
+                getPlayersDetails:'getPlayersDetails',
+                getPlayersNumber: 'getPlayersNumber',
+                getSentMessage: 'getSentMessage',
+                getOnControllerInfo:'getController'
+            }),
+            PlayersNumber(){
+                return this.getPlayersNumber;
+            }
         },
         methods: {
-            AddSetCount () {
-                this.SetCount += 1;
-                console.log('setcount'+ this.SetCount);
-            },
-            /**
-             * @return {boolean}
-             */
-            JudgeImage (id) {
-                const onbutton = this.getPlayersDetails[id].online;
-
-                console.log(`judge now ${id}`);
-
-                return (onbutton === true);
+            setSrc(id , path){
+                console.log(path)
+                this.Src[id] = require(path);
             }
         },
         mounted() {
-            console.log("----------");
-            console.log('setcount'+ this.SetCount);
-            console.log(this.setImageSrc);
+        },
+        watch: {
+            PlayersNumber : function (){
+                console.log(`I'm happy`)
+                console.log(`これが送られてきたものです${this.getSentMessage}`)
+                console.log(this.getSentMessage)
 
-            const client = new Paho.MQTT.Client("192.168.1.3", 8080, "clientId-wREnNxL12n");
-            client.onConnectionLost = onConnectionLost;
-            client.onMessageArrived = onMessageArrived;
-            client.connect({
-                onSuccess: onConnect
-            });
 
-            function onConnect() {
-                console.log("Connect to broker with MQTT!");
-                client.subscribe("test");
-            };
+                console.log(this.getPlayersNumber)
 
-            function onConnectionLost(responseObject) {
-                if (responseObject.errorCode !== 0)
-                    console.log("connectionLost:" + responseObject.errorMessage);
-            };
+                // 登録
+                this.$store.dispatch('UpdateOnlinePlayer',{
+                    id: this.getPlayersNumber-1,
+                    ControllerId: this.getSentMessage[0]
+                })
+                console.log('-----')
+                console.log(this.getPlayersDetails[this.getPlayersNumber-1].ControllerId)
+                console.log(this.getOnControllerInfo)
+                let count = this.getPlayersNumber -1
+                let self = this
 
-            let before = null;
-            let beforeArrivedTime = 0;
+                let UseControllerName = this.getOnControllerInfo.find(function(use){
+                    console.log(use.shortName)
+                    return use.shortName === (self.getPlayersDetails[count].ControllerId)
+                })
 
-            function onMessageArrived(message) {
-                let nowTime = Date.now();
-                if (nowTime - beforeArrivedTime < 100) return;
-                beforeArrivedTime = nowTime;
-                console.log(message.payloadString);
-            };
+                console.log(UseControllerName.shortname)
 
-        }
+                this.Src[this.getPlayersNumber] = require(`../../assets/number${this.getPlayersNumber}.jpg`);
+
+
+                this.JudgeImage[this.getPlayersNumber] = true
+
+                console.log(this.Src);
+                console.log(this.JudgeImage);
+            }
+        },
     }
 </script>
 
