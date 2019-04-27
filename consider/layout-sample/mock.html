@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://localhost:8082/#/ -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://localhost:8082/favicon.ico">
+    <script src="./mock_files/bideo.js"></script>
+    <title>mock</title>
+  <link href="./mock_files/app.js" rel="preload" as="script"><style type="text/css">#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style><style type="text/css">
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#app,.home{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.page{
+    height: 100%;
+    width : 100%;
+    /* background-color: rgba(0, 0, 255, 0.794); */
+}
+.contents{
+    height: 100%;
+    width : 100%;
+    /* background-color: rgba(0, 128, 0, 0.678); */
+}
+.select{
+    background-color : rgba(255, 0, 0, 0.692);
+    height: 100%;
+    width: 100%;
+    padding: auto;
+}
+.select img{
+    padding: 2%;
+    margin: 3%;
+    height: 80%;
+    width: auto;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+#up{
+    height: 25%;
+    position: relative;
+    padding: 5%;
+}
+#title{
+    padding: 2%;
+    font-size: 70px;
+    font-weight: bolder;
+    height: 5%;
+}
+#down{
+    height: 25%;
+    position: relative;
+    padding: auto;
+}
+
+</style><style type="text/css">#contents[data-v-01763a56] {
+  height: 100%;
+  width: 100%;
+}
+#contents .myButton[data-v-01763a56] {
+  width: 50%;
+  height: 400px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  color: rgba(0,69,212,0.47);
+  text-shadow: 5px 5px 5px rgba(255,255,255,0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6795fd), to(#67ceff));
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.29);
+          box-shadow: 0px 2px 2px rgba(0,0,0,0.29);
+  border-bottom: solid 5px #5e7fca;
+  size: 20px;
+}
+#contents .myButton[data-v-01763a56]:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+  border-bottom: none;
+  outline: none;
+}
+</style><style type="text/css">#contents[data-v-6709617d] {
+  height: 100px;
+  width: 100px;
+}
+#contents .atomImg[data-v-6709617d] {
+  width: 100px;
+  height: 100px;
+}
+</style><style type="text/css">.imageContent[data-v-1c7a8637] {
+  height: 150px;
+  width: 150px;
+}
+</style><style type="text/css">.test[data-v-79cee944] {
+  height: 500px;
+  width: 500px;
+}
+</style><style type="text/css">html[data-v-28acaca5],
+body[data-v-28acaca5] {
+  width: 100%;
+  height: 100%;
+/* overflow: hidden; */
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*[data-v-28acaca5] {
+  margin: 0;
+  padding: 0;
+}
+#mainBox[data-v-28acaca5] {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #faebd7;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+}
+#mainUp[data-v-28acaca5] {
+  background-color: #f86262;
+  height: 30%;
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  top: 20%;
+  position: relative;
+  z-index: -1;
+}
+#questionBox[data-v-28acaca5] {
+  font-size: 20px;
+  color: #000;
+  font-weight: bolder;
+  position: relative;
+  background-color: transparent;
+  padding-top: 2%;
+  height: 30%;
+}
+#choiceBox[data-v-28acaca5] {
+  list-style: none;
+  background-color: transparent;
+  position: relative;
+  height: 40%;
+  text-align: center;
+  margin: auto;
+}
+#choiceBox li[data-v-28acaca5] {
+  position: relative;
+  list-style: none;
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 30%;
+  margin: 1% 2%;
+  padding: 6px 4%;
+  left: auto;
+}
+/* #choice1,#choice2{
+}
+#choice3,#choice4{
+} */
+#mainBottom[data-v-28acaca5] {
+  background-color: #000;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  right: 10%;
+  height: 35%;
+  width: 80%;
+  z-index: 1;
+  position: fixed;
+}
+.playerScreen video[data-v-28acaca5] {
+  position: relative;
+/* top: 50%; left: 50%;
+  transform: translate(-50%, -50%); */
+  display: none;
+}
+.playerScreen[data-v-28acaca5] {
+  background-color: #808080;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+.playerContainer[data-v-28acaca5] {
+  text-align: center;
+  background-color: #727272;
+  outline: solid #000 medium;
+  height: 100%;
+  width: 25%;
+  float: left;
+  list-style: none;
+}
+#question[data-v-28acaca5] {
+  font-size: 3em;
+  background-color: #faebd7;
+  width: 60%;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+/* Background Video */
+#videoContainer[data-v-28acaca5] {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#background_video[data-v-28acaca5] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2, 2);
+          transform: translate(-50%, -50%) scale(2, 2);
+  z-index: -1;
+}
+#video_cover[data-v-28acaca5] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+</style><script charset="utf-8" src="./mock_files/app.8d3ff4e059cade4a2cbb.hot-update.js"></script></head>
+  <body data-gr-c-s-loaded="true">
+    <noscript>
+      <strong>We're sorry but mock doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><div class="home"><div class="page"><div class="contents"><div class="select"><div id="up"><img src="./mock_files/logo.82b9c7a5.png"><img src="./mock_files/logo.82b9c7a5.png"><img src="./mock_files/logo.82b9c7a5.png"></div><p id="title">push button to start</p><div id="down"><img src="./mock_files/logo.82b9c7a5.png"><img src="./mock_files/logo.82b9c7a5.png"><img src="./mock_files/logo.82b9c7a5.png"></div></div></div></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./mock_files/app.js"></script>
+
+</body></html>
