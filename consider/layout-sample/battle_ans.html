@@ -38,7 +38,7 @@ html, body {
     padding: 0;
     top:20%;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #questionBox{
@@ -49,7 +49,17 @@ html, body {
     margin:0;
     vertical-align: top;
     text-align: left;
-
+}
+.answerNum{
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.151);
+    font-weight: bolder;
+    position: relative;
+    background-color: transparent;
+    width: 10%;
+    top:-195px;
+    left: -30%;
+    display: inline-block;
 }
 .questionNum{
     font-size: 100px;
@@ -59,60 +69,99 @@ html, body {
     background-color: transparent;
     height: 40%;
     width: 10%;
-    /* top:-75%; */
+    top:-75%;
     left: 30px;
     display: inline-block;
 }
 .question{
-    font-size: 20px;
-    color: black;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    position: relative;
+    background-color: transparent;
+    height: 10%;
+    /*margin: 0;
+    width: 40%;
+    /* left: -65px; */
+    top:-120%;
+    /* display: inline-block; */
+}
+.question p{
+    margin: 6% 3%;
+}
+
+.answer{
+    background-color: #333;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
     font-weight: bolder;
     position: relative;
     background-color: transparent;
-    height: 40%;
-    margin: 0;
-    width: 40%;
-    left: -65px;
-    /* top:-80%; */
-    display: inline-block;
+    top:-140%;
+    text-align: right;
+    z-index: 14;
 }
-.question p{
-    margin: 5%;
+
+.answer p{
+    margin: 4% 70% auto auto;
 }
 .mediaContainer img{
     background-color: rgba(255, 255, 255, 0.534);
-    height:85%;
+    height:50%;
     width: 95%;
-    margin: 5%;
+    margin: 28% 10% auto;
 }
 
 .mediaContainer video{
     background-color: rgba(255, 255, 255, 0.534);
-    height:85%;
+    height:50%;
     width: 95%;
-    margin: 5%;
-    /* top:-100px; */
+    margin: 28% 10% auto;
     display:none;
 }
+
 .mediaContainer{
     background-color:transparent;
     height: 100%;
-    width:40%;
+    width:30%;
     left: 0;
     z-index:10;
+    display: inline-block;
     text-align: left;
-    display: none;
+}
+
+.detail{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 15;
+}
+.detail p{
+    font-size: 25px;
+    height: 60%;
+    color: rgb(255, 255, 255);
+    font-weight:300;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.151);
+
 }
 
 #choiceBox{
     list-style: none;
     background-color: transparent;
     position: relative;
-    top: -100%;
-    height:100%;
+    top: -120px;
+    height:50%;
     width: 60%;
+    text-align: center;
     margin: auto 0 0 auto;
-    padding: 2% 0;
+    display: none;
 }
 
 #choiceBox li{
@@ -124,15 +173,15 @@ html, body {
     font-weight: bold;
     display: inline-block;
     width: 30%;
-    right: -40px;
-    margin: 10px 15px;
-    padding: 50px 4%;
+    margin: 5px 8px;
+    padding: 6px 4%;
+    left: auto;
 }
 #mainSide{
     position:fixed;
     background-color: transparent;
     height: 65%;
-    width: 5;
+    width: 5%;
     top: 0;
     right: 190px;
     z-index: 12;
@@ -145,9 +194,9 @@ html, body {
     height: 65%;
     text-align: center;
     width: 50px;
-    right: 68px;
-    top: 180px;
+    top: 170px;
     z-index: 12;
+    display: none;
 }
 #mainBottom{
 	background-color:#000000;
@@ -230,16 +279,22 @@ html, body {
         <p><img src="{{:img}}"></p>
         <p><video src="{{:video}}"></p>
     </div>
-    <div class="questionNum">
+    <div class="answerNum">
         <p>Q{{:num}}</p>
     </div>
     <div class="question">
         <p>{{:question}}</p>
     </div>
+    <div class="answer">
+        <p>A. {{:answer}}</p>
+    </div>
+    <div class="detail">
+        <p>{{:detail}}</p>
+    </div>
 </script>
-<script id="choiceBox_tml" type="text/x-jsrender">
+<!-- <script id="choiceBox_tml" type="text/x-jsrender">
     <li id="choice{{#index}}">{{:#data}}</li>
-</script>
+</script> -->
 <script type="text/javascript">
     $(function () {
         var $que = $("#questionBox_tml");
@@ -247,14 +302,13 @@ html, body {
         var data1 = {
             num:1,
             question:'平成にリリースされた歌は？', 
+            answer:'だんご３兄弟',
+            detail:'解説わらわら',
             img:'bideo.js/video_cover.jpeg',
-            video:'hawaii.mp4',
-            choice:[
-                'だんご３兄弟','大きな古時計','チューリップ','さんぽ'
-            ]
+            video:'hawaii.mp4'
         };
         $("#questionBox").append($que.render(data1));
-        $("#choiceBox").append($cho.render(data1.choice));
+        // $("#choiceBox").append($cho.render(data1.choice));
     }); 
 </script>
 </head>
