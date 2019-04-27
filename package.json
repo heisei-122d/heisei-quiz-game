@@ -1,0 +1,24 @@
+{
+  "name": "heisei-quiz-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bideo": "^1.0.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpioblink/heisei-quiz-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpioblink/heisei-quiz-game/issues"
+  },
+  "homepage": "https://github.com/gpioblink/heisei-quiz-game#readme"
+}
