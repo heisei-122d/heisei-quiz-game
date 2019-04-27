@@ -128,6 +128,99 @@ html, body {
     padding: 15px 4%;
     left: auto;
 }
+
+.results{
+    /* margin: 5%; */
+    padding: 2%;
+}
+
+#king{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 3%;
+    font-size: 60px;
+    color: rgb(255, 238, 143);
+    font-weight: bolder;
+}
+
+.resultNum{
+    height: 7%;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.151);
+    font-weight: bolder;
+    position: relative;
+    text-align: left;
+    left: 40%;
+}
+
+.result{
+    color: aliceblue;
+    position: relative;
+    height: 10%;
+    /* top:-10px; */
+    font-size: 80px;
+    left: 40%;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.heiseiText{
+    /* background-color: aqua; */
+    font-size:60px;
+    position: relative;
+    color: #000000;
+    font-weight: bolder;
+    height: 10%;
+    width: 50%;
+    top:0px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.heisei{
+    /* background-color: aqua; */
+    font-size:60px;
+    position: relative;
+    color: #000000;
+    font-weight: bolder;
+    height: 10%;
+    width: 15%;
+    top: 10px;
+    right: 5%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.resultDetail{
+    /* width: 40%;
+    right: 0px; */
+    position: relative;
+    top: 50px;
+
+}
+
+.resultDetail .result{
+    font-size: 30px;
+    left: 45%;
+
+}
+.resultDetail .resultNum{
+    font-size: 15px;
+    top:10px;
+    left: 45%;
+}
+.resultDetail .heiseiText{
+    font-size: 30px;
+}
+.resultDetail .heisei{
+    font-size: 30px;
+}
+
 #mainSide{
     position:fixed;
     background-color: transparent;
@@ -239,9 +332,21 @@ html, body {
 <script id="choiceBox_tml" type="text/x-jsrender">
     <li id="choice{{:#index}}">{{:#data}}</li>
 </script>
+<script id="result_detail_tml_king" type="text/x-jsrender">
+    <div class="resultDetail_king">
+        <p class="resultNum">{{>num}}位</p>
+        <p class="result">{{>name}}</p>
+        <p class="heiseiText">平成度</p>
+        <p class="heisei">{{>heisei}}</p>
+    </div>
+</script>
 <script id="result_detail_tml" type="text/x-jsrender">
-    <p class="result">{{:#name}}</p>
-    <p class="heisei">{{:#heisei}}</p>
+    <div class="resultDetail">
+        <p class="resultNum">{{>num}}位</p>
+        <p class="result">{{>name}}</p>
+        <p class="heiseiText">平成度</p>
+        <p class="heisei">{{>heisei}}</p>
+    </div>
 </script>
 <script type="text/javascript">
     $(function () {
@@ -261,15 +366,28 @@ html, body {
         $("#choiceBox").append($cho.render(data1.choice));
 
         var $res = $("#result_detail_tml");
-        var data2 = {
+        var $resk = $("#result_detail_tml_king");
+
+        var data2 = [{
             name:'PS4',
             num:1,
             heisei:30
-        };
-        // for(i=0;i<data2.length;i++){
-        //     var j=data2[i].num;
-        $("#resultDetail").append($res.render(data2));
-        // }
+        },{
+            name:'mp3',
+            num:2,
+            heisei:24
+        },{
+            name:'ramen',
+            num:3,
+            heisei:20
+        },{
+            name:'unko',
+            num:4,
+            heisei:14
+        }];
+        var data3 = data2.slice(1,data2.length); 
+        $(".results").append($resk.render(data2[0]));
+        $(".results").append($res.render(data3));
     }); 
 </script>
 </head>
@@ -279,24 +397,11 @@ html, body {
                 <video id="background_video" loop muted autoplay></video>
         </div>
 	<div id="mainUp">
+        <p id="king">平成キング</p>
         <!-- <div id="questionBox"></div>
         <ul id="choiceBox"></ul> -->
         <div class="results">
-            <h1>1</h1>
-            <div id="resultDetail"></div>
         </div>
-        <!-- <div class="result">
-            <h2>2</h2>
-            <div class="resultDetail"></div>
-        </div>
-        <div class="result">
-            <h2>3</h2>
-            <div class="resultDetail"></div>
-        </div>
-        <div class="result">
-            <h2>4</h2>
-            <div class="resultDetail"></div>
-        </div> -->
     </div>
     <div id="mainSide">
         <!-- <div id="timer"></div> -->
