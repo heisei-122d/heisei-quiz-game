@@ -217,27 +217,19 @@ video{
 <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
 <script>
     (function () {
-
         // 背景動画の再生
-
         let bv = new Bideo();
         bv.init({
             // Video element
             videoEl: document.querySelector('#background_video'),
-
             // Container element
             container: document.querySelector('#videoContainer'),
-
             // Resize
             resize: true,
-
             // autoplay: false,
-
             isMobile: window.matchMedia('(max-width: 768px)').matches,
-
             playButton: document.querySelector('#play'),
             pauseButton: document.querySelector('#pause'),
-
             // Array of objects containing the src and type
             // of different video formats to add
             src: [
@@ -246,7 +238,6 @@ video{
                 type: 'video/mp4'
                 },
             ],
-
             // What to do once video loads (initial frame)
             /*onLoad: function () {
                 document.querySelector('#video_cover').style.display = 'none';
