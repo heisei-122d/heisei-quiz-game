@@ -5,11 +5,11 @@
                 <div id="up">
                     <div class="device">
                         <img src="../../assets/logo.png"/>
-                        <p>Ready</p>
+                        <p>&nbsp;P1<br>Ready</p>
                     </div>
                     <div class="device">
                         <img src="../../assets/logo.png"/>
-                        <p>Ready</p>                    
+                        <p>&nbsp;P2<br>Ready</p>                    
                     </div>
                     <div class="device">
                         <img src="../../assets/logo.png"/>
@@ -87,30 +87,36 @@
         background-color : rgba(255, 0, 0, 0.692);
         height: 100%;
         width: 100%;
-        padding: auto;
     }
     .device{
-        display: inline;
+        text-align: center;
+        display: inline-block;
+        padding: 5%;
     }
-    .select img{
-        padding: 2%;
-        margin: 3%;
+    
+    .device img{
+        padding: 25%;
+        /* margin: 3%; */
         height: 80%;
         width: auto;
         border-radius: 40px;
         background-color: rgba(0, 0, 0, 0.411);
     }
+    
     .device p{
+        line-height: 1em;
+        text-align: left;
+        margin: -2% auto auto auto;
         position: absolute;
         font-size: 130px;
         font-weight: bolder;
-        color: rgba(255, 255, 255, 0.568);
         top:50%;
-        left:21%;
-        transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -webkit-transform: rotate(-10deg);
+        color: rgba(255, 255, 255, 0.568);
+        transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
     }
+
     #up{
         height: 25%;
         position: relative;
