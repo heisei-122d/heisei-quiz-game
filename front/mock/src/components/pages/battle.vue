@@ -3,7 +3,7 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
-        <question-window></question-window>
+        <answer-window></answer-window>
         <div id="mainBottom">
             <player-screen> </player-screen>
         </div>
@@ -13,12 +13,14 @@
     import RegisterButton from '../molcules/RegisterButton'
     import QuestionWindow from '../molcules/QuestionWindow'
     import PlayerScreen from '../molcules/PlayerScreen'
+    import AnswerWindow from '../molcules/AnswerWindow'
     export default{
         name:'test',
         components:{
             'register-button': RegisterButton,
             'question-window': QuestionWindow,
-            'player-screen': PlayerScreen
+            'player-screen': PlayerScreen,
+            'answer-window': AnswerWindow
         },
         methods:{
         },
