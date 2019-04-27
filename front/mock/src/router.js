@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Resister from './components/pages/testResister'
-import Battle from './components/pages/testBattle'
+import Battle from './components/pages/battle'
 Vue.use(Router)
 
 export default new Router({
