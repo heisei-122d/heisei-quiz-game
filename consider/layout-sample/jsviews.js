@@ -9,7 +9,6 @@
  * Copyright 2019, Boris Moore
  * Released under the MIT License.
  */
-
 //jshint -W018, -W041, -W120
 
 (function(factory, global) {
