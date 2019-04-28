@@ -9,8 +9,9 @@
     import ProblemData from '../../assets/json/problems'
     export default{
         name:'StartButton',
-        components:{
-            'start-button':StartButt
+        components: {
+            'start-button': StartButton
+        },
         methods:{
             initClick(){
                 this.$router.push(`/register`);
