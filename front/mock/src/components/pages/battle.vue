@@ -40,7 +40,7 @@
         mounted: function() {
             const self = this
             setTimeout(function(){
-                self.$router.push('/answer')
+                // self.$router.push('/answer')
             },10000)
             // 背景動画の再生
             let bv = new window.Bideo();
@@ -160,13 +160,18 @@ video{
     /* display: none; */
 }
 
-#question{
-    font-size: 3em;
+.question{
+    font-size: 2em;
     background-color: antiquewhite;
     width: 60%;
-    vertical-align: middle;
+    vertical-align: left;
     margin: 0 auto;
+    display: none;
 }
+
+/* .question p{
+    font-size: 50px;
+} */
 
 /* Background Video */
 

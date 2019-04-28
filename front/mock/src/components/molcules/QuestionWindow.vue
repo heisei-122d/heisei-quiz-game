@@ -6,7 +6,7 @@
                 <p><video src="b" /></p>
             </div>
             <div class="questionNum">
-                <p>{{this.getProblemNumber}}</p>
+                <p>Q{{this.getProblemNumber}}</p>
             </div>
             <div class="question">
                 <p>{{this.ProblemData[this.getProblemNumber].problemContent}}?</p>
@@ -77,6 +77,7 @@
 }
 
 .questionNum{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100px;
     color: rgba(0, 0, 0, 0.151);
     font-weight: bolder;
@@ -85,7 +86,7 @@
     height: 40%;
     width: 100%;
     /* top:-75%; */
-    left: 70px;
+    left: 30px;
     display: inline-block;
 }
 .question{
@@ -98,14 +99,14 @@
     margin: 0;
     width: 60%;
     left: 0px;
-    top: -30px;
-    /* top:-80%; */
+    /* top: -30px; */
+    top:-10%;
     display: inline-block;
 }
 
 .question p{
-    margin: 5%;
-
+    margin: -40% 10% auto;
+    font-size: 40px;
 }
 .mediaContainer img{
     background-color: rgba(255, 255, 255, 0.534);
@@ -134,6 +135,7 @@
 }
 
 #choiceBox{
+    font-size: 3em;
     list-style: none;
     background-color: transparent;
     position: relative;
@@ -147,7 +149,7 @@
 #choiceBox li{
     position: relative;
     list-style: none;
-    background-color: #333;
+    /* background-color: #333; */
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -155,7 +157,9 @@
     width: 30%;
     right: -40px;
     margin: 10px 15px;
-    padding: 50px 4%;
+    padding: 3%;
+    /* border-radius: 30px; */
+
 }
 #mainSide{
     position:fixed;
@@ -168,7 +172,7 @@
 }
 
 #mainUp{
-	background-color:#f86262;
+	background-color:#dbdbdb;
 	height: 30%;
     width: 70%;
     margin: auto ;
@@ -180,5 +184,24 @@
 
 .questionNum p {
     margin: 0;
+}
+
+#choiceindex1{
+    background-color: rgb(255, 38, 0);
+}
+
+#choiceindex2{
+    background-color: rgb(0, 189, 63);
+
+}
+
+#choiceindex3{
+    background-color: blue;
+
+}
+
+#choiceindex4{
+    background-color: yellow;
+
 }
 </style>
