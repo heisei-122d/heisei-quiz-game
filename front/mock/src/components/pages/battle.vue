@@ -3,10 +3,14 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
+<<<<<<< HEAD
         <question-window></question-window>
         <div id="mainBottom">
             <player-screen> </player-screen>
         </div>
+=======
+        <10sec-ountdown-timer></10sec-countdown-timer>
+>>>>>>> 38ed3f2b235d15081b89d00bcb6c3357a06fe24f
     </div>
 </template>
 <script>
@@ -16,6 +20,7 @@
     import AnswerWindow from '../molcules/AnswerWindow'
     import ResultWindow from '../molcules/ResultWindow'
     import ProblemData from '../../assets/json/problems'
+    import CountdownTimer from '../molcules/CountdownTimer'
 
     export default{
         name:'test',
@@ -27,7 +32,8 @@
             'question-window': QuestionWindow,
             'player-screen': PlayerScreen,
             'answer-window': AnswerWindow,
-            'result-window': ResultWindow
+            'result-window': ResultWindow,
+            '10sec-countdown-timer': CountdownTimer
         },
         methods:{
         },
