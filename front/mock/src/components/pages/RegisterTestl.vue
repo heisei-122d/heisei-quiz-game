@@ -91,12 +91,13 @@
     .device{
         text-align: center;
         display: inline-block;
-        padding: 5%;
+        position: relative;
+        padding: 6%;
+        top:-20%;
     }
     
     .device img{
         padding: 25%;
-        /* margin: 3%; */
         height: 80%;
         width: auto;
         border-radius: 40px;
@@ -106,11 +107,10 @@
     .device p{
         line-height: 1em;
         text-align: left;
-        margin: -2% auto auto auto;
         position: absolute;
         font-size: 130px;
         font-weight: bolder;
-        top:50%;
+        top:25%;
         color: rgba(255, 255, 255, 0.568);
         transform: rotate(-20deg);
         -moz-transform: rotate(-20deg);
