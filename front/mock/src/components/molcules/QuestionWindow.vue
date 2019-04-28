@@ -6,28 +6,53 @@
                 <p><video src="b" /></p>
             </div>
             <div class="questionNum">
-                <p>Q</p>
+                <p>{{this.getProblemNumber}}</p>
             </div>
             <div class="question">
-                <p>BFG</p>
+                <p>{{this.ProblemData[this.getProblemNumber].problemContent}}</p>
+                <p>まる　か　ばつか</p>
             </div>
+
         </div>
+        <!--
         <ul id="choiceBox">
             <li id="choiceindex1">AAA</li>
             <li id="choiceindex2">BBB</li>
             <li id="choiceindex3">CCC</li>
             <li id="choiceindex4">DDD</li>
         </ul>
+        -->
     </div>
 </template>
 
 <script>
+    import {
+        mapGetters
+    } from 'vuex'
+    import ProblemData from '../../assets/json/problems'
+
     export default{
         name:'QuestionWindow',
         components:{
         },
         methods:{
+        },
+        data(){
+            return {
+                ProblemData: ProblemData
+            }
+        },
+        computed:{
+            ...mapGetters({
+                getOnControllerId:'getOnControllerId',
+                getPlayersDetails:'getPlayersDetails',
+                getPlayersNumber: 'getPlayersNumber',
+                getSentMessage: 'getSentMessage',
+                getOnControllerInfo:'getController',
+                getProblemNumber: 'getProblemNumber'
+            }),
         }
+
     }
 </script>
 
@@ -84,7 +109,7 @@
 
 .question p{
     margin: 5%;
-    
+
 }
 .mediaContainer img{
     background-color: rgba(255, 255, 255, 0.534);

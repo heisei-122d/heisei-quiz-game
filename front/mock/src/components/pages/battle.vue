@@ -3,6 +3,10 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
+        <question-window></question-window>
+        <div id="mainBottom">
+            <player-screen> </player-screen>
+        </div>
     </div>
 </template>
 <script>
@@ -11,8 +15,13 @@
     import PlayerScreen from '../molcules/PlayerScreen'
     import AnswerWindow from '../molcules/AnswerWindow'
     import ResultWindow from '../molcules/ResultWindow'
+    import ProblemData from '../../assets/json/problems'
+
     export default{
         name:'test',
+        data: () => {
+            ProblemData:ProblemData
+        },
         components:{
             'register-button': RegisterButton,
             'question-window': QuestionWindow,
@@ -23,6 +32,10 @@
         methods:{
         },
         mounted: function() {
+            const self = this
+            setTimeout(function(){
+                self.$router.push('/answer')
+            },10000)
             // 背景動画の再生
             let bv = new window.Bideo();
             console.log(bv);

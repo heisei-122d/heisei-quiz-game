@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "ageGroup": 1,
+    "problemGroup": 1,
+    "problemContent": "ドラゴンボールは平成に公開された",
+    "image": "",
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "ageGroup": 1,
+    "problemContent": "アトムは平成に公開された",
+    "image": "",
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "ageGroup": 2,
+    "problemContent": "ブラックジャックは平成に公開された",
+    "image": "",
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "ageGroup": 2,
+    "problemContent": "ゲーム「ファイナルファンタジー」第１作は平成に発売された",
+    "image": "",
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "ageGroup": 3,
+    "problemContent": "ゲーム「ポケットモンスター」第１作は平成に発売された",
+    "image": "",
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "ageGroup": 3,
+    "problemContent": "トムアンドジェリーは平成に公開された",
+    "image": "",
+    "answer": 0
+  }
+]

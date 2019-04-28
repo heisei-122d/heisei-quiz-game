@@ -26,7 +26,7 @@ export default new Vuex.Store({
       {
         id: 2,
         name: 'ドリキャス',
-        shortName: 'dm',
+        shortName: 'dc',
         Button: [
             "1","2","3","4","s"
         ]
@@ -39,8 +39,8 @@ export default new Vuex.Store({
             "1","2","3","4","s"
         ]
       }
-    ],
-    PlayersNumber: 0,
+      ],
+      PlayersNumber: 0,
     PlayersDetails: [
       {
         name: "player1",
@@ -70,6 +70,7 @@ export default new Vuex.Store({
       },
     ],
     sentMessage:[2],
+    problemNumber: 1
   },
   getters: {
     // コントローラーの名前、ID、ボタンの情報が書かれたオブジェクトを返す
@@ -85,6 +86,9 @@ export default new Vuex.Store({
     },
     getSentMessage(state) {
       return state.sentMessage
+    },
+    getProblemNumber(state) {
+      return state.problemNumber
     }
   },
   mutations: {
@@ -104,6 +108,9 @@ export default new Vuex.Store({
     setSentMessage(state, payload) {
       state.sentMessage[0] = payload.sentMessageController
       state.sentMessage[1] = payload.sentMessageButton
+    },
+    addProblemNumber(state, payload) {
+      state.problemNumber += 1
     }
   },
   actions: {
@@ -139,6 +146,9 @@ export default new Vuex.Store({
         sentMessageController: sentMessageController,
         sentMessageButton: sentMessageButton
       })
+    },
+    UpdateProblemNumber({ commit}){
+      commit('addProblemNumber')
     }
   }
 })

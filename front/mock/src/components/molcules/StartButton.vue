@@ -6,16 +6,19 @@
 
 <script>
     import StartButton from '../atoms/AtomStartButton'
+    import ProblemData from '../../assets/json/problems'
     export default{
         name:'StartButton',
         components:{
-            'start-button':StartButton
-        },
+            'start-button':StartButt
         methods:{
             initClick(){
                 this.$router.push(`/register`);
                 console.log('init');
             }
+        },
+        mounted(){
+            console.log(ProblemData)
         }
     }
 </script>
