@@ -15,6 +15,10 @@
     import PlayerScreen from '../molcules/PlayerScreen'
     import AnswerWindow from '../molcules/AnswerWindow'
     import ResultWindow from '../molcules/ResultWindow'
+    import {
+        mapActions,
+        mapGetters
+    } from 'vuex'
     export default{
         name:'test',
         components:{
@@ -25,6 +29,14 @@
             'result-window': ResultWindow
         },
         methods:{
+        },
+        computed:{
+          ...mapActions({
+              UpdateProblemNumber:'UpdateProblemNumber'
+          }),
+          ...mapGetters({
+              getProblemNumber: 'getProblemNumber'
+          })
         },
         mounted: function() {
             const self = this
@@ -71,6 +83,10 @@
                     document.querySelector('#video_cover').style.display = 'none';
                 }*/
             });
+
+            this.$store.dispatch('UpdateProblemNumber');
+            console.log('--------------------')
+            console.log(this.getProblemNumber)
         }
     }
 </script>

@@ -7,7 +7,7 @@
         <div id="mainBottom">
             <player-screen> </player-screen>
         </div>
-        <10sec-ountdown-timer></10sec-countdown-timer>
+        <timer></timer>
 
     </div>
 </template>
@@ -22,8 +22,10 @@
 
     export default{
         name:'test',
-        data: () => {
-            ProblemData:ProblemData
+        data() {
+            return{
+                ProblemData:ProblemData
+            }
         },
         components:{
             'register-button': RegisterButton,
@@ -31,7 +33,7 @@
             'player-screen': PlayerScreen,
             'answer-window': AnswerWindow,
             'result-window': ResultWindow,
-            '10sec-countdown-timer': CountdownTimer
+            'timer': CountdownTimer
         },
         methods:{
         },

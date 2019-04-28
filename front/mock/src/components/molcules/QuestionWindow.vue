@@ -9,19 +9,14 @@
                 <p>{{this.getProblemNumber}}</p>
             </div>
             <div class="question">
-                <p>{{this.ProblemData[this.getProblemNumber].problemContent}}</p>
-                <p>まる　か　ばつか</p>
+                <p>{{this.ProblemData[this.getProblemNumber].problemContent}}?</p>
             </div>
 
         </div>
-        <!--
         <ul id="choiceBox">
             <li id="choiceindex1">AAA</li>
             <li id="choiceindex2">BBB</li>
-            <li id="choiceindex3">CCC</li>
-            <li id="choiceindex4">DDD</li>
         </ul>
-        -->
     </div>
 </template>
 
@@ -88,21 +83,22 @@
     position: relative;
     background-color: transparent;
     height: 40%;
-    width: 10%;
+    width: 100%;
     /* top:-75%; */
-    left: 30px;
+    left: 70px;
     display: inline-block;
 }
 .question{
-    font-size: 20px;
+    font-size: 50px;
     color: black;
     font-weight: bolder;
     position: relative;
     background-color: transparent;
     height: 40%;
     margin: 0;
-    width: 40%;
-    left: -65px;
+    width: 60%;
+    left: 0px;
+    top: -30px;
     /* top:-80%; */
     display: inline-block;
 }
