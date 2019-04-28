@@ -161,22 +161,19 @@ html, body {
     position: fixed;
 }
 
-.playerScreen video {
-  position: relative;
-  /* top: 50%; left: 50%;
-  transform: translate(-50%, -50%); */
-  display: none;
-}
-
 .playerScreen{
     background-color: gray;
     overflow: hidden;
     height: 100%;
     width: 100%;
     bottom: 0;
+    position: relative;
 }
 
 .playerContainer{
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;  
   text-align: center;
   background-color: rgb(114, 114, 114);
   outline: solid black medium;
@@ -276,7 +273,7 @@ html, body {
                 <div><video id="player1"  loop muted autoplay></video></div>
             </li>
             <li class="playerContainer">
-                <div><video id="player2"  loop muted autoplay></video></div>
+                <div><div class="score">score: 100</div><video id="player2"  loop muted autoplay></video></div>
             </li>
             <li class="playerContainer">
                 <div><video id="player3"  loop muted autoplay></video></div>
@@ -292,7 +289,7 @@ html, body {
 <link href="https://vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
 <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
 
-<!-- <script>
+<script>
     (function () {
 
         // 背景動画の再生
@@ -380,7 +377,7 @@ html, body {
             }
         });
     }());
-</script> -->
+</script>
 
 </body>
 </html>

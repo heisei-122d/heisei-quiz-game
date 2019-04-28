@@ -304,10 +304,13 @@ html, body {
             answer:'だんご３兄弟',
             detail:'解説わらわら',
             img:'bideo.js/video_cover.jpeg',
-            video:'hawaii.mp4'
+            video:'hawaii.mp4',
+            choice:[
+                'だんご３兄弟','大きな古時計','チューリップ','さんぽ'
+            ]
         };
         $("#questionBox").append($que.render(data1));
-        // $("#choiceBox").append($cho.render(data1.choice));
+        $("#choiceBox").append($cho.render(data1.choice));
     }); 
 </script>
 </head>
