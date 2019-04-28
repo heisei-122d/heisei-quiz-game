@@ -3,10 +3,6 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
-        <result-window></result-window>
-        <div id="mainBottom">
-            <player-screen> </player-screen>
-        </div>
     </div>
 </template>
 <script>
@@ -70,7 +66,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */  
+  /* overflow: hidden; */
   padding: 0;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -161,14 +157,14 @@ video{
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -1;
 }
-  
+
 #background_video {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) scale(2,2);
   z-index: -1;
 }
-  
+
 #video_cover {
   position: absolute;
   width: 100%; height: 100%;

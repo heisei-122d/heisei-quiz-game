@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-</template>
+</template>>
 
 <script>
     import {
@@ -88,9 +88,6 @@
                 console.log(`これが送られてきたものです${this.getSentMessage}`)
                 console.log(this.getSentMessage)
 
-
-                console.log(this.getPlayersNumber)
-
                 // 登録
                 this.$store.dispatch('UpdateOnlinePlayer',{
                     id: this.getPlayersNumber-1,
@@ -103,16 +100,17 @@
                 let self = this
 
                 let UseControllerName = this.getOnControllerInfo.find(function(use){
-                    console.log(use.shortName)
+                    console.log("a"+use.shortName)
                     return use.shortName === (self.getPlayersDetails[count].ControllerId)
                 })
+                console.log('aaaaa');
+                console.log(UseControllerName)
 
-                console.log(UseControllerName.shortname)
-
-                this.Src[this.getPlayersNumber] = require(`../../assets/number${this.getPlayersNumber}.jpg`);
+                this.Src[UseControllerName.id] = require(`../../assets/number${this.getPlayersNumber}.jpg`);
 
 
-                this.JudgeImage[this.getPlayersNumber] = true
+                //this.JudgeImage[this.getPlayersNumber] = true
+                this.$set(this.JudgeImage,UseControllerName.id,true)
 
                 console.log(this.Src);
                 console.log(this.JudgeImage);

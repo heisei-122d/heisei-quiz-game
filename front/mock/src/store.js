@@ -18,6 +18,7 @@ export default new Vuex.Store({
       {
         id: 1,
         name: 'スーファミ',
+        shortName: 'sf',
         Button: [
             "1","2","3","4","s"
         ]
@@ -25,6 +26,7 @@ export default new Vuex.Store({
       {
         id: 2,
         name: 'ドリキャス',
+        shortName: 'dm',
         Button: [
             "1","2","3","4","s"
         ]
@@ -32,6 +34,7 @@ export default new Vuex.Store({
       {
         id: 3,
         name: 'プレステ',
+        shortName: 'ps',
         Button: [
             "1","2","3","4","s"
         ]

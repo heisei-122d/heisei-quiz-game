@@ -13,7 +13,7 @@
                         <p class="heiseiText">平成度</p>
                         <p class="heisei">30</p>
                 </div>
-                <div class="detailBox">    
+                <div class="detailBox">
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
                         <p class="result">ほげほげ</p>
@@ -204,14 +204,14 @@
 .resultDetail .heiseiText{
     left: 40%;
     font-size: 30px;
-    top: 0px;
+    top: -50px;
     width: 50%;
 }
 .resultDetail .heisei{
     left: 80%;
     font-size: 80px;
     position: absolute;
-    top: 10px;
+    top: -30px;
 }
 
 
