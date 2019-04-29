@@ -1,6 +1,6 @@
 <template>
     <li class="playerContainer">
-        <div><div class="score">score: 100</div><video id="player1"  loop muted autoplay></video></div>
+        <div><div class="score">score: 100</div><img id="player1" src="@/assets/dc/dc-thinking-anim.gif"></div>
     </li>
 </template>
 
@@ -17,17 +17,6 @@
         mounted() {
             window.playerEvents = this
             console.log(this);
-            this.player = videojs('player1',{
-                techOrder: ['html5'],
-                autoplay: true,
-                sources: [{
-                    type: "video/mp4",
-                    src: "fc.mp4"
-                }],
-                html5: {
-                    nativeTextTracks: false
-                }
-            });
         }
     }
 </script>
