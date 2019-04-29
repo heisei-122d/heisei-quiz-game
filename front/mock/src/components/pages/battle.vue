@@ -3,7 +3,9 @@
         <div id="videoContainer">
                 <video id="background_video" loop muted autoplay></video>
         </div>
-        <10sec-ountdown-timer></10sec-countdown-timer>
+        <question-window></question-window>
+        <countdown-timer></countdown-timer>
+        <player-screen></player-screen>
     </div>
 </template>
 <script>
@@ -21,7 +23,7 @@
             'player-screen': PlayerScreen,
             'answer-window': AnswerWindow,
             'result-window': ResultWindow,
-            '10sec-countdown-timer': CountdownTimer
+            'countdown-timer': CountdownTimer
         },
         methods:{
         },
