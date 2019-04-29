@@ -8,7 +8,10 @@
                             <img src="../../assets/fc.jpeg" class="imageSize"/>
                         </div>
                         <div class = "NumberImg">
-                            <img :src="Src[0]" v-if="JudgeImage[0]" class="imageSize">
+                            <img src="../../assets/number1.jpg" v-if="true" class="imageSize">
+                            <!--
+                                <img :src="Src[0]" v-if="JudgeImage[0]" class="imageSize">
+                                -->
                         </div>
                     </div>
                     <div class="Images">
@@ -240,9 +243,16 @@
     .NumberImg{
         height: 100%;
         width: 100%;
+        background-color: red;
         border-radius: 30px;
         background-color: rgba(0, 0, 0, 0.411);
+        opacity: 0.5;
         /* display: none; */
+    }
+    .NumberImg .imageSize{
+        width: 100%;
+        margin: auto;
+        position: relative;
     }
 
     .ControllerImg .imageSize{

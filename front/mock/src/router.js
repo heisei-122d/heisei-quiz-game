@@ -7,7 +7,7 @@ import Question from './components/pages/battle'
 import Result from './components/pages/result.vue'
 import Answer from './components/pages/answer'
 import Newage from "./components/pages/NewAge"
-
+import End from "./components/molcules/EndRole.vue"
 
 
 
@@ -45,6 +45,11 @@ export default new Router({
       path: '/newage',
       name: 'newage',
       component: Newage
+    },
+    {
+      path: '/end',
+      name: 'end',
+      component: End
     }
     /*
     {
