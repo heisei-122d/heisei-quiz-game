@@ -130,7 +130,7 @@
     padding: 2%;
     margin: 5%;
     border-radius: 10px;
-    background-color:rgba(255, 0, 0, 0.692) ;
+    background-color:rgba(82, 82, 82, 0.692) ;
 }
 
 #mainUp{
