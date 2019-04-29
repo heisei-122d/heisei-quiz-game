@@ -80,8 +80,6 @@
                 this.Src[id] = require(path);
             }
         },
-        mounted() {
-        },
         watch: {
             PlayersNumber : function (){
 

@@ -31,10 +31,10 @@
         mapGetters
     } from 'vuex'
     import RegisterButton from '../molcules/RegisterButton'
+
     export default{
         name:'test',
         components:{
-            'register-button': RegisterButton
         },
         methods:{
         },

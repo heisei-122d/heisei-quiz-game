@@ -20,8 +20,18 @@
     import ProblemData from '../../assets/json/problems'
     import CountdownTimer from '../molcules/CountdownTimer'
 
+    import {Mixin} from '../../services/vue.mixins'
+
+    import {
+        mapGetters,
+        mapActions
+    } from 'vuex'
+
     export default{
         name:'test',
+        mixins:[
+            Mixin
+        ],
         data() {
             return{
                 ProblemData:ProblemData
@@ -37,10 +47,19 @@
         },
         methods:{
         },
-        mounted: function() {
+        computed:{
+            ...mapGetters({
+                getSentMessage:'getSentMessage',
+                getPlayersDetails:'getPlayersDetails'
+            })
+        },
+        mounted() {
+            console.log(this.$router.history.current.name);
+            console.log("-------log details")
+            console.log(this.getPlayersDetails)
             const self = this
             setTimeout(function(){
-                self.$router.push('/answer')
+                //self.$router.push('/answer')
             },10000)
             // 背景動画の再生
             let bv = new window.Bideo();
@@ -76,6 +95,10 @@
                     document.querySelector('#video_cover').style.display = 'none';
                 }*/
             });
+
+        },
+        watch: {
+
         }
     }
 </script>

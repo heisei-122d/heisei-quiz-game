@@ -70,7 +70,8 @@ export default new Vuex.Store({
       },
     ],
     sentMessage:[2],
-    problemNumber: 1
+    problemNumber: 1,
+    ranking:[]
   },
   getters: {
     // コントローラーの名前、ID、ボタンの情報が書かれたオブジェクトを返す
@@ -141,7 +142,7 @@ export default new Vuex.Store({
         id:id
       })
     },
-    UpdateSentMessage({ commit },{ sentMessageController, sentMessageButton}){
+    UpdateSentMessage({ commit },{ sentMessageController, sentMessageButton    }){
       commit('setSentMessage',{
         sentMessageController: sentMessageController,
         sentMessageButton: sentMessageButton
