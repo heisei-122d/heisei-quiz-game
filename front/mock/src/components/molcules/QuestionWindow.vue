@@ -57,7 +57,7 @@
     position: relative;
     background-color: transparent;
     height: 100%;
-    /* padding: 1%; */
+    padding: 0;
     margin:0;
     vertical-align: top;
     text-align: left;
@@ -90,17 +90,19 @@
     display: inline-block;
 }
 .question{
-    font-size: 50px;
+    font-size: 6em;
     color: black;
     font-weight: bolder;
-    position: relative;
+    position: absolute;
     background-color: transparent;
-    height: 40%;
-    margin: 0;
-    width: 60%;
-    left: 0px;
+    height: 100%;
+    padding: 4% 5%;
+    top:80%;
+    left:-5%;
+    width: 50%;
+    /* left: 0px; */
     /* top: -30px; */
-    top:-10%;
+    /* top:5%; */
     display: inline-block;
 }
 
