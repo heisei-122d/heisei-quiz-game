@@ -32,7 +32,7 @@
                             <img src="../../assets/ps.png" class="imageSize"/>
                         </div>
                         <div class = "NumberImg" >
-                            <img :src="Src[3]" v-if="JudgeImage[3]" class="imageSize"/>
+                            <img :src="Src[3]" v-if="JudgeImage[3]" class="imageSize toumei"/>
                         </div>
                     </div>
                  </div>
@@ -84,23 +84,34 @@
         },
         watch: {
             PlayersNumber : function (){
-                console.log(`I'm happy`)
-                console.log(`これが送られてきたものです${this.getSentMessage}`)
-                console.log(this.getSentMessage)
+
+                console.log('start');
+                console.log(this.getPlayersNumber)
 
                 // 登録
                 this.$store.dispatch('UpdateOnlinePlayer',{
                     id: this.getPlayersNumber-1,
                     ControllerId: this.getSentMessage[0]
-                })
-                console.log('-----')
-                console.log(this.getPlayersDetails[this.getPlayersNumber-1].ControllerId)
-                console.log(this.getOnControllerInfo)
-                let count = this.getPlayersNumber -1
+                });
+
+                console.log(this.getPlayersDetails);
+
+
+                let count = this.getPlayersNumber -1;
+
+                console.log('count'+count)
+
+                console.log(this.getPlayersDetails)
+
+                console.log('sssss')
+
                 let self = this
 
                 let UseControllerName = this.getOnControllerInfo.find(function(use){
-                    console.log("a"+use.shortName)
+                    console.log('aaaaaaaaaaaa')
+                    console.log(use.shortName)
+                    console.log('bbbbbbbbbbbb')
+                    console.log(self.getPlayersDetails[count].ControllerId)
                     return use.shortName === (self.getPlayersDetails[count].ControllerId)
                 })
                 console.log('aaaaa');
@@ -108,12 +119,14 @@
 
                 this.Src[UseControllerName.id] = require(`../../assets/number${this.getPlayersNumber}.jpg`);
 
-
                 //this.JudgeImage[this.getPlayersNumber] = true
                 this.$set(this.JudgeImage,UseControllerName.id,true)
 
                 console.log(this.Src);
                 console.log(this.JudgeImage);
+                if ( this.getPlayersNumber === 4){
+                    this.$router.push(`/newage`)
+                }
             }
         },
     }

@@ -2,19 +2,19 @@
     <div id="mainUp">
         <div id="questionBox">
             <div class="mediaContainer">
-                <p><img src="bideo.js/video_cover.jpeg" /></p>
+                <p><img src="video.js/video_cover.jpeg" /></p>
                 <p><video src="b" /></p>
             </div>
             <div class="answerNum">
-                <p>Q</p>
+                <p>{{this.getProblemNumber}}</p>
             </div>
             <div class="answer">
-                <p>A. ほげほげ</p>
+                <p>A.{{this.problemData[this.getProblemNumber].answer}}</p>
             </div>
             <div class="question">
                 <p>ああああああ</p>
             </div>
-            
+
             <div class="detail">
                 <p>鶴ヶ城はいつでもきれいだから見に来てね</p>
             </div>
@@ -23,11 +23,25 @@
 </template>
 
 <script>
+    import ProblemData from '../../assets/json/problems'
+    import {
+        mapGetters
+    } from 'vuex'
     export default{
         name:'AnswerWindow',
         components:{
         },
+        data(){
+            return {
+                problemData:ProblemData
+            }
+        },
         methods:{
+        },
+        computed:{
+            ...mapGetters({
+                getProblemNumber:'getProblemNumber'
+            })
         }
     }
 </script>

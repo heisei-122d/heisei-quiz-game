@@ -4,8 +4,11 @@
                 <video id="background_video" loop muted autoplay></video>
         </div>
         <question-window></question-window>
-        <countdown-timer></countdown-timer>
-        <player-screen></player-screen>
+        <div id="mainBottom">
+            <player-screen> </player-screen>
+        </div>
+        <timer></timer>
+
     </div>
 </template>
 <script>
@@ -14,20 +17,31 @@
     import PlayerScreen from '../molcules/PlayerScreen'
     import AnswerWindow from '../molcules/AnswerWindow'
     import ResultWindow from '../molcules/ResultWindow'
+    import ProblemData from '../../assets/json/problems'
     import CountdownTimer from '../molcules/CountdownTimer'
+
     export default{
         name:'test',
+        data() {
+            return{
+                ProblemData:ProblemData
+            }
+        },
         components:{
             'register-button': RegisterButton,
             'question-window': QuestionWindow,
             'player-screen': PlayerScreen,
             'answer-window': AnswerWindow,
             'result-window': ResultWindow,
-            'countdown-timer': CountdownTimer
+            'timer': CountdownTimer
         },
         methods:{
         },
         mounted: function() {
+            const self = this
+            setTimeout(function(){
+                self.$router.push('/answer')
+            },10000)
             // 背景動画の再生
             let bv = new window.Bideo();
             console.log(bv);

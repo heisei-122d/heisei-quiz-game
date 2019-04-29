@@ -22,11 +22,14 @@
                             <video id="player2"  loop muted autoplay></video>
                     </div>
             </div>
-            
+
         </div>
     </div>
 </template>
 <script>
+    import {
+        mapGetters
+    } from 'vuex'
     import RegisterButton from '../molcules/RegisterButton'
     export default{
         name:'test',
@@ -36,6 +39,9 @@
         methods:{
         },
         mounted: function() {
+            setTimeout(function () {
+                this.$router.push('/')
+            })
             // 背景動画の再生
             let bv = new window.Bideo();
             console.log(bv);
@@ -79,7 +85,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */  
+  /* overflow: hidden; */
   padding: 0;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -118,7 +124,7 @@ html, body {
     font-weight: bolder;
     position: relative;
     background-color: transparent;
-    padding-top: 2%; 
+    padding-top: 2%;
     height: 30%;
 }
 
@@ -205,14 +211,14 @@ video{
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
 }
-  
+
 #background_video {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) scale(2,2);
   z-index: -1;
 }
-  
+
 #video_cover {
   position: absolute;
   width: 100%; height: 100%;

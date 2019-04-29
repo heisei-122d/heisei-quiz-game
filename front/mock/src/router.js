@@ -1,16 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Resister from './components/pages/testResister'
-import Battle from './components/pages/battle'
+import Top from './components/molcules/StartButton'
+import Resister from './components/pages/RegisterTestl'
+import Question from './components/pages/battle'
+import Result from './components/pages/result.vue'
+import Answer from './components/pages/answer'
+import Newage from "./components/pages/NewAge"
+
+
+
+
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'top',
+      component: Top
     },
     {
       path: '/register',
@@ -18,9 +27,24 @@ export default new Router({
       component: Resister
     },
     {
-      path: '/battle',
-      name: 'battle',
-      component: Battle
+      path: '/question',
+      name: 'question',
+      component: Question
+    },
+    {
+      path: '/answer',
+      name: 'answer',
+      component: Answer
+    },
+    {
+      path: '/result',
+      name: 'result',
+      component: Result
+    },
+    {
+      path: '/newage',
+      name: 'newage',
+      component: Newage
     }
     /*
     {
