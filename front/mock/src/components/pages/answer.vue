@@ -42,11 +42,11 @@
             const self = this
             setTimeout(function(){
                 if(self.problemNumber === 15){
-                    self.$router.push('/result')
+                    // self.$router.push('/result')
                 }  else if(self.problemNumber%5 === 0 ) {
-                    self.$router.push('/newage')
+                    // self.$router.push('/newage')
                 } else {
-                    self.$router.push('/question')
+                    // self.$router.push('/question')
                 }
             },5000)
             // 背景動画の再生
@@ -86,7 +86,7 @@
 
             this.$store.dispatch('UpdateProblemNumber');
             console.log('--------------------')
-            console.log(this.getProblemNumber)
+            // console.log(this.getProblemNumber)
         }
     }
 </script>

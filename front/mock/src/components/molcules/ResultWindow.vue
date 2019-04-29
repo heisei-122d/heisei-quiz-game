@@ -61,40 +61,54 @@
 
 
 .mediaContainer img{
-    background-color: rgba(255, 255, 255, 0.534);
+    background-color: transparent;
     width: 600px;
-    margin: 28% 0 0 20%;
+    /* margin: 28% 0 0 20%; */
+    display:none;
+
 }
 
 
 .mediaContainer video{
-    background-color: rgba(255, 255, 255, 0.534);
+    position: absolute;
+    background-color: transparent;
     height:50%;
     width: 95%;
-    margin: 28% 10% auto;
+    /* margin: 28% 10% auto; */
     display:none;
 }
 
 .mediaContainer{
     background-color:transparent;
-    height: 100%;
-    width:30%;
-    left: 0;
-    top: 100%;
-    margin: 0;
+    height: 65%;
+    width:25%;
+    top: 17%;
+    margin: 3%;
     z-index:10;
     text-align: left;
     position: absolute;
     /* overflow: hidden; */
 }
 
+#mainBox{
+	width: 100%;
+    height: 100%;
+	text-align:center;
+    background-color:antiquewhite;
+    max-width: 100%;
+	max-height: 100%;
+    z-index: 100;
+    position: absolute;
+    overflow: hidden;
+}
+
 #mainUp{
-	background-color:#f86262;
-	height: 55%;
+	background-color:rgba(255, 27, 27, 0.692);
+	height: 60%;
     width: 70%;
     margin: auto ;
-    padding: 0;
-    top:7%;
+    padding: 1%;
+    top:5%;
     position: relative;
     z-index: -1;
 }
@@ -104,30 +118,36 @@
     padding: 2%;
     background-color: transparent;
     height: 100%;
+    font-size: 1.5em;
     /* padding: 1%; */
+    top:10%;
     margin:0;
+    position: relative;
     vertical-align: top;
     text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-.questionBox {
+#questionBox {
     position: relative;
     background-color: transparent;
     height: 100%;
-    /* padding: 1%; */
-    margin:0;
+    /* margin:3%; */
     vertical-align: top;
     text-align: left;
 }
 
 .resultNum{
     height: 7%;
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.151);
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.294);
     font-weight: bolder;
     position: relative;
     text-align: left;
     left: 0%;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
 }
 
 .result{
@@ -135,7 +155,8 @@
     position: absolute;
     height: 10%;
     top:-30px;
-    font-size: 80px;
+    font-size: 5em;
+    font-weight: bolder;
     left: 13%;
     width: 30%;
     text-align: left;
@@ -150,7 +171,7 @@
     font-weight: bolder;
     height: 20%;
     left: 50%;
-    top: -200px;
+    top: -1em;
     display: inline-block;
     text-align: right;
     vertical-align: bottom;
@@ -158,63 +179,66 @@
 
 .heisei{
     /* background-color: aqua; */
-    font-size:120px;
+    font-size:5.5em;
     position: relative;
     color: #000000;
     font-weight: bolder;
-    height: 10%;
-    width: 15%;
-    top: -180px;
-    right: 5%;
+    /* height: 10%; */
+    /* width: 15%; */
+    top: -0.6em;
+    right: 3%;
     left: 57%;
     display: inline-block;
     text-align: right;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
+    /* background-color: aqua; */
+
 }
 
 .resultDetailKing{
     height: 100%;
     width: 70%;
     position: absolute;
-    top:0;
+    top:9%;
     right: 0;
     z-index: 15;
-    top: 1%;
 }
 
 .resultDetail{
     /* width: 40%;
     right: 0px; */
     position: relative;
-    top: 150px;
+    top: 25%;
+    margin: 2%;
 }
 
 .resultDetail .result{
-    font-size: 50px;
-    left: 44%;
+    font-size: 2.5em;
+    left: 17%;
     margin: 0;
     top: 20%;
 }
 .resultDetail .resultNum{
-    font-size: 30px;
+    font-size: 1.3em;
     top:10px;
-    left: 35%;
+    left: 10%;
     margin: 0;
+    font-weight: bolder;
+
 }
 .resultDetail .heiseiText{
     left: 40%;
     font-size: 30px;
-    top: -50px;
-    width: 50%;
+    top: 0em;
+    width: 30%;
 }
 .resultDetail .heisei{
     left: 80%;
     font-size: 80px;
+    width: 10%;
     position: absolute;
-    top: -30px;
+    top: 0.2em;
 }
-
-
 
 #king{
     background-color: #333;
@@ -224,16 +248,11 @@
     position: absolute;
     background-color: transparent;
     z-index: 14;
-
     top:0;
-    left: 0;
-    margin: 1%;
-    font-size: 60px;
-    color: rgb(255, 238, 143);
-}
-
-#king p{
-    margin: 4% 75% auto auto;
+    left: 30px;
+    font-size: 5.5em;
+    /* border: dotted 10px white; */
+    color: rgb(255, 253, 132);
 }
 
 .detailBox {

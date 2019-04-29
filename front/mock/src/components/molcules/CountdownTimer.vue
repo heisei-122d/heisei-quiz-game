@@ -40,6 +40,7 @@
     right: 68px;
     animation-name : bar-animation;
     animation-duration : 10s;
+    border-radius: 30px;
     z-index: 12;
 }
 #timer{
@@ -50,9 +51,10 @@
     height: 450px;
     text-align: center;
     width: 50px;
-    right: 68px;
+    right: -10px;
     top: 180px;
     z-index: 12;
+    border-radius: 30px;
 }
 
 #mainSide{
@@ -61,7 +63,7 @@
     height: 65%;
     width: 5%;
     top: 0;
-    right: 190px;
+    right: 180px;
     z-index: 12;
 }
 </style>

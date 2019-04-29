@@ -29,7 +29,7 @@
         mounted() {
             const self = this
             setTimeout(function(){
-                self.$router.push('/')
+                // self.$router.push('/')
             },10000)
             // 背景動画の再生
             let bv = new window.Bideo();

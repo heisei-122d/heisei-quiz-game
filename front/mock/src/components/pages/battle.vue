@@ -183,13 +183,18 @@ video{
     /* display: none; */
 }
 
-#question{
-    font-size: 3em;
+.question{
+    font-size: 2em;
     background-color: antiquewhite;
     width: 60%;
-    vertical-align: middle;
+    vertical-align: left;
     margin: 0 auto;
+    display: none;
 }
+
+/* .question p{
+    font-size: 50px;
+} */
 
 /* Background Video */
 

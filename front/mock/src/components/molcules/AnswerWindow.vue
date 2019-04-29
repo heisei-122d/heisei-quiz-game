@@ -6,10 +6,10 @@
                 <p><video src="b" /></p>
             </div>
             <div class="answerNum">
-                <p>{{this.getProblemNumber}}</p>
+                <p>Q{{this.getProblemNumber}}</p>
             </div>
             <div class="answer">
-                <p>A.{{this.problemData[this.getProblemNumber].answer}}</p>
+                <p>A. {{this.problemData[this.getProblemNumber].answer}}</p>
             </div>
             <div class="question">
                 <p>ああああああ</p>
@@ -60,57 +60,52 @@
 }
 
 .question{
-    font-size: 13px;
+    font-size: 1em;
     color: rgb(0, 0, 0);
-    font-weight: normal;
+    font-weight:bold;
     position: absolute;
-    background-color: transparent;
-    height: 10%;
-    margin: 0 0 0 5%;
+    top:1.4em;
+    left: 5em;
+    /* margin: 0 0 0 2%; */
     width: 40%;
-}
-
-.question p{
-    margin: 6% 3%;
 }
 
 .answer{
     background-color: #333;
-    font-size: 48px;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
+    color:rgba(255, 0, 0, 0.692) ;
+
+    font-size:5em;
+    /* color: rgb(0, 0, 0); */
     font-weight: bolder;
+    top:15%;
+    left: 5%;
     position: absolute;
     background-color: transparent;
-    text-align: right;
+    text-align: left;
     z-index: 14;
 }
 
-.answer p{
-    margin: 4% 75% auto auto;
-}
-
 .mediaContainer img{
-    background-color: rgba(255, 255, 255, 0.534);
-    width: 300px;
-    margin: 28% 0 0 20%;
+    background-color:transparent;
+    height: 90%;
+    width: 90%;
+    margin: 3%;
 }
 
 
 .mediaContainer video{
-    background-color: rgba(255, 255, 255, 0.534);
-    height:50%;
-    width: 95%;
-    margin: 28% 10% auto;
+    background-color:transparent;
+    height: 90%;
+    width: 90%;
+    margin: 3%;
     display:none;
 }
 
 .mediaContainer{
     background-color:transparent;
-    height: 100%;
-    width:30%;
-    left: 0;
+    height: 60%;
+    bottom: 0;
+    width:34%;
     z-index:10;
     text-align: left;
     position: absolute;
@@ -118,6 +113,7 @@
 }
 
 .detail{
+    
     height: 100%;
     width: 70%;
     position: absolute;
@@ -134,11 +130,12 @@
     padding: 2%;
     margin: 5%;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color:rgba(255, 0, 0, 0.692) ;
 }
 
 #mainUp{
-	background-color:#f86262;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color:#dbdbdb;
 	height: 30%;
     width: 70%;
     margin: auto ;
@@ -153,8 +150,10 @@
 }
 
 .answerNum{
-    font-size: 100px;
+    font-size: 8em;
     color: rgba(0, 0, 0, 0.151);
+    left: 0.5%;
+    top:-5%;
     font-weight: bolder;
     position: relative;
     background-color: transparent;
