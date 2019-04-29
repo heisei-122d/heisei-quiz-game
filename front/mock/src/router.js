@@ -50,6 +50,11 @@ export default new Router({
       path: '/end',
       name: 'end',
       component: End
+    },
+    {
+      path: '/start',
+      name: 'start',
+      component: Start
     }
     /*
     {
