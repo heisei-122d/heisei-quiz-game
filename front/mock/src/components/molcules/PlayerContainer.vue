@@ -22,10 +22,15 @@
 </script>
 
 <style scoped >
+    .score {
+        padding:10px ;
+        color: navajowhite;
+        font-size: 30px
+    }
     .playerContainer{
         display: flex;
-        justify-content: center; 
-        align-items: center;  
+        justify-content: center;
+        align-items: center;
         text-align: center;
         background-color: rgb(114, 114, 114);
         outline: solid black medium;
