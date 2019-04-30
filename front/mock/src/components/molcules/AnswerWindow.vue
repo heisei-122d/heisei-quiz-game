@@ -123,7 +123,7 @@
 }
 
 .detail p{
-    font-size: 25px;
+    font-size: 40px;
     height: 60%;
     color: rgb(255, 255, 255);
     font-weight:300;
