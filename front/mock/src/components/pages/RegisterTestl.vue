@@ -8,10 +8,7 @@
                             <img src="../../assets/fc.jpeg" class="imageSize"/>
                         </div>
                         <div class = "NumberImg">
-                            <img src="../../assets/number1.jpg" v-if="true" class="imageSize">
-                            <!--
-                                <img :src="Src[0]" v-if="JudgeImage[0]" class="imageSize">
-                                -->
+                            <img :src="Src[0]" v-if="JudgeImage[0]" class="imageSize">
                         </div>
                     </div>
                     <div class="Images">
@@ -91,6 +88,7 @@
 
                 console.log('start');
                 console.log(this.getPlayersNumber)
+                console.log(this.getSentMessage)
 
                 // 登録
                 this.$store.dispatch('UpdateOnlinePlayer',{
@@ -98,30 +96,17 @@
                     ControllerId: this.getSentMessage[0]
                 });
 
-                console.log(this.getPlayersDetails);
+                console.log(this.getPlayersDetails)
+                console.log('-----------------')
+                console.log(this.getOnControllerInfo)
 
 
                 let count = this.getPlayersNumber -1;
-
-                console.log('count'+count)
-
-                console.log(this.getPlayersDetails)
-
-                console.log('sssss')
-
                 let self = this
-
                 let UseControllerName = this.getOnControllerInfo.find(function(use){
-                    console.log('aaaaaaaaaaaa')
-                    console.log(use.shortName)
-                    console.log('bbbbbbbbbbbb')
-                    console.log(self.getPlayersDetails[count].ControllerId)
                     return use.shortName === (self.getPlayersDetails[count].ControllerId)
                 })
-                console.log('aaaaa');
                 console.log(UseControllerName)
-
-                this.Src[UseControllerName.id] = require(`../../assets/number${this.getPlayersNumber}.jpg`);
 
                 //this.JudgeImage[this.getPlayersNumber] = true
                 this.$set(this.JudgeImage,UseControllerName.id,true)
@@ -172,7 +157,7 @@
     *{
         margin: 0;
         padding: 0;
-    }  
+    }
     #app,.home{
         width: 100%;
         height: 100%;
@@ -229,7 +214,7 @@
         /* padding: 2%; */
         /* top:-20%;  */
     }
-    
+
     /* .Images .ControllerImg{
         padding: 25%;
         height: 80%;

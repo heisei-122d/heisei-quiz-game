@@ -15,13 +15,26 @@
 <script>
 /*降りた時に再生-> document.getElementById("CSound").play();*/
 
-    export default{
-            name:'EndWindow',
-            components:{
-            },
-            methods:{
-            }
-        }
+export default{
+    name:'EndWindow',
+    components:{
+    },
+    methods:{
+    },
+    mounted() {
+        const self = this
+
+        console.log(this.$el)
+
+        console.log(document.getElementById("CSound").play())
+        setTimeout(function(){
+            console.log(document.getElementById("CSound").play())
+        },3000)
+        setTimeout(function(){
+            self.$router.push('/question')
+        },10000)
+    }
+}
 </script>
 
 <style>
@@ -37,7 +50,7 @@
     * {
         margin: 0; padding: 0;
     }
-    
+
     .cp_cont {
         text-align: center;
         /* overflow: hidden; */

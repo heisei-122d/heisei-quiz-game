@@ -14,8 +14,8 @@
 
         </div>
         <ul id="choiceBox">
-            <li id="choiceindex1">AAA</li>
-            <li id="choiceindex2">BBB</li>
+            <li id="choiceindex1">◯</li>
+            <li id="choiceindex2">×</li>
         </ul>
     </div>
 </template>
@@ -46,6 +46,13 @@
                 getOnControllerInfo:'getController',
                 getProblemNumber: 'getProblemNumber'
             }),
+        },
+        mounted() {
+            console.log('question')
+            const self = this
+            setTimeout(function(){
+                self.$router.push('./answer')
+            },5000)
         }
 
     }

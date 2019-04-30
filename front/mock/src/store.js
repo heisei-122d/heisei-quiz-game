@@ -44,6 +44,7 @@ export default new Vuex.Store({
     PlayersDetails: [
       {
         name: "player1",
+        id:1,
         ControllerId: null,
         online: false,
         result: 0,
@@ -51,6 +52,7 @@ export default new Vuex.Store({
       },
       {
         name: "player2",
+        id:2,
         ControllerId: null,
         online: false,
         result: 0,
@@ -58,20 +60,39 @@ export default new Vuex.Store({
       },
       {
         name: "player3",
+        id:3,
         ControllerId: null,
         online: false,
         lastPushed: null
       },
       {
         name:"player4",
+        id:4,
         ControllerId: null,
         online: false,
         lastPushed: null
       },
     ],
-    sentMessage:[2],
+    sentMessage:[],
     problemNumber: 1,
-    ranking:[]
+    ranking:[
+      {
+        id:1,
+        result:10
+      },
+      {
+        id:2,
+        result:20
+      },
+      {
+        id:3,
+        result:30
+      },
+      {
+        id:4,
+        result:40
+      }
+    ]
   },
   getters: {
     // コントローラーの名前、ID、ボタンの情報が書かれたオブジェクトを返す
@@ -90,6 +111,9 @@ export default new Vuex.Store({
     },
     getProblemNumber(state) {
       return state.problemNumber
+    },
+    getRanking(state) {
+      return state.ranking
     }
   },
   mutations: {
@@ -101,7 +125,7 @@ export default new Vuex.Store({
       state.PlayersNumber += 1;
     },
     incrementPlayersResult(state, payload) {
-      state.PlayersDetails[payload.id].result += payload.point
+      state.PlayersDetails[payload.id].result += 10
     },
     decrementPlayersResult(state, payload) {
       state.PlayersDetails[payload.id].result -= payload.point
@@ -110,8 +134,19 @@ export default new Vuex.Store({
       state.sentMessage[0] = payload.sentMessageController
       state.sentMessage[1] = payload.sentMessageButton
     },
-    addProblemNumber(state, payload) {
+    addProblemNumber(state) {
       state.problemNumber += 1
+    },
+    decideRanking(state){
+      const Data = getter.getPlayersDetails
+      console.log(Data)
+
+      Data.sort(function (x,y) {
+        if (x.result < y.result) return -1;
+        if (x.result > y.result) return 1;
+      })
+      console.log(data)
+      state.ranking = Data
     }
   },
   actions: {
@@ -132,7 +167,6 @@ export default new Vuex.Store({
     // id
     UpdateIncrementPlayersResult({ commit },{ id }){
       commit('incrementPlayersResult', {
-        point: 10,
         id: id
       })
     },
@@ -150,6 +184,9 @@ export default new Vuex.Store({
     },
     UpdateProblemNumber({ commit}){
       commit('addProblemNumber')
+    },
+    UpdateRanking({ commit }){
+      commit('decideRanking')
     }
   }
 })

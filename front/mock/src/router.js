@@ -8,6 +8,7 @@ import Result from './components/pages/result.vue'
 import Answer from './components/pages/answer'
 import Newage from "./components/pages/NewAge"
 import End from "./components/molcules/EndRole.vue"
+import Start from "./components/molcules/StartRole"
 
 
 
@@ -16,11 +17,6 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'top',
-      component: Top
-    },
     {
       path: '/register',
       name: 'register',
@@ -52,7 +48,7 @@ export default new Router({
       component: End
     },
     {
-      path: '/start',
+      path: '/',
       name: 'start',
       component: Start
     }

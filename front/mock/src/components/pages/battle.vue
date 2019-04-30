@@ -46,11 +46,31 @@
             'timer': CountdownTimer
         },
         methods:{
+            compare(a, b) {
+                // Use toUpperCase() to ignore character casing
+                const genreA = a.result;
+                const genreB = b.result;
+
+                console.log('genreA'+genreA)
+
+                let comparison = 0;
+                if (genreA > genreB) {
+                    comparison = 1;
+                } else if (genreA < genreB) {
+                    comparison = -1;
+                }
+                return comparison;
+            },
+            updateRanking(){
+                this.$store.dispatch('UpdateRanking')
+            }
         },
         computed:{
             ...mapGetters({
                 getSentMessage:'getSentMessage',
-                getPlayersDetails:'getPlayersDetails'
+                getPlayersDetails:'getPlayersDetails',
+                problemData:'getProblemData',
+                getRanking:'getRanking'
             })
         },
         mounted() {
@@ -58,9 +78,9 @@
             console.log("-------log details")
             console.log(this.getPlayersDetails)
             const self = this
-            setTimeout(function(){
+            setTimeout(function () {
                 //self.$router.push('/answer')
-            },10000)
+            }, 10000)
             // 背景動画の再生
             let bv = new window.Bideo();
             console.log(bv);
@@ -85,8 +105,8 @@
                 // of different video formats to add
                 src: [
                     {
-                    src: './hawaii.mp4',
-                    type: 'video/mp4'
+                        src: './back1.mp4',
+                        type: 'video/mp4'
                     },
                 ],
 
@@ -94,11 +114,27 @@
                 /*onLoad: function () {
                     document.querySelector('#video_cover').style.display = 'none';
                 }*/
-            });
 
+
+            })
         },
-        watch: {
+        watch:{
+            player1Result(){
+                console.log('player1'+'のポイントが変更')
+            },
+            player2Result(){
+                console.log('player2'+'のポイントが変更')
+                this.$router.push('./answer')
 
+            },
+            player3Result(){
+                console.log('player3'+'のポイントが変更')
+                this.$router.push('./answer')
+            },
+            player4Result(){
+                console.log('player4'+'のポイントが変更')
+                this.$router.push('./answer')
+            },
         }
     }
 </script>

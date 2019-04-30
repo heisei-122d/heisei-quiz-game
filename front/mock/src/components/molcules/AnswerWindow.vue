@@ -2,21 +2,20 @@
     <div id="mainUp">
         <div id="questionBox">
             <div class="mediaContainer">
-                <p><img src="video.js/video_cover.jpeg" /></p>
                 <p><video src="b" /></p>
             </div>
             <div class="answerNum">
                 <p>Q{{this.getProblemNumber}}</p>
             </div>
             <div class="answer">
-                <p>A. {{this.problemData[this.getProblemNumber].answer}}</p>
+                <p v-if = "this.problemData[this.getProblemNumber].answer">A. ×</p>
+                <p v-if = "!this.problemData[this.getProblemNumber].answer">A. ◯</p>
             </div>
             <div class="question">
-                <p>ああああああ</p>
             </div>
 
             <div class="detail">
-                <p>鶴ヶ城はいつでもきれいだから見に来てね</p>
+                <p>{{this.problemData[this.getProblemNumber].result}}</p>
             </div>
         </div>
     </div>
@@ -113,7 +112,7 @@
 }
 
 .detail{
-    
+
     height: 100%;
     width: 70%;
     position: absolute;

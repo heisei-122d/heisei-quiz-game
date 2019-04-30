@@ -28,6 +28,11 @@
             'answer-window': AnswerWindow,
             'result-window': ResultWindow
         },
+        data(){
+            return {
+                rankingArray: []
+            }
+        },
         methods:{
         },
         computed:{
@@ -35,7 +40,8 @@
               UpdateProblemNumber:'UpdateProblemNumber'
           }),
           ...mapGetters({
-              getProblemNumber: 'getProblemNumber'
+              getProblemNumber: 'getProblemNumber',
+              getPlayersDetails: 'getPlayersDetails'
           })
         },
         mounted: function() {
@@ -83,6 +89,24 @@
                     document.querySelector('#video_cover').style.display = 'none';
                 }*/
             });
+
+            this.getPlayersDetails.forEach(function( value ){
+                this.rankingArray.push({
+                    player: value.id,
+                    result:value.result
+                })
+            })
+
+            // ランキングを作るところ
+            if(this.getProblemNumber === 15){
+                this.rankingArray.sort(function(a,b){
+                    if(a.result < bn.result) return -1
+                    if(a.result > b.result) return 1
+                    return 0
+                })
+            }
+
+
 
             this.$store.dispatch('UpdateProblemNumber');
             console.log('--------------------')

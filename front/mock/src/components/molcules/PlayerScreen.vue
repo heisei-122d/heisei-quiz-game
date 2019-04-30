@@ -1,6 +1,9 @@
 <template>
     <ul class="playerScreen">
         <player></player>
+        <player></player>
+        <player></player>
+        <player></player>
     </ul>
 </template>
 

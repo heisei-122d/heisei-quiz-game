@@ -9,28 +9,28 @@
             <div class="results">
                 <div class="resultDetailKing">
                         <p class="resultNum">1位</p>
-                        <p class="result">PS4</p>
+                        <p class="result">P{{this.getRanking[0].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">30</p>
+                        <p class="heisei">{{this.getRanking[0].result}}</p>
                 </div>
                 <div class="detailBox">
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
-                        <p class="result">ほげほげ</p>
+                        <p class="result">P{{this.getRanking[1].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">26</p>
+                        <p class="heisei">{{this.getRanking[1].result}}</p>
                     </div>
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
-                        <p class="result">ほげほげ</p>
+                        <p class="result">P{{this.getRanking[2].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">26</p>
+                        <p class="heisei">{{this.getRanking[2].result}}</p>
                     </div>
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
-                        <p class="result">ほげほげ</p>
+                        <p class="result">P{{this.getRanking[3].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">26</p>
+                        <p class="heisei">{{this.getRanking[3].result}}</p>
                     </div>
                 </div>
             </div>
@@ -39,11 +39,20 @@
 </template>
 
 <script>
+    import {
+        mapGetters
+    }from 'vuex'
     export default{
         name:'ResultWindow',
         components:{
         },
         methods:{
+        },
+        computed:{
+            ...mapGetters({
+                getPlayersDetails:'getPlayersDetails',
+                getRanking:'getRanking'
+            })
         }
     }
 </script>
