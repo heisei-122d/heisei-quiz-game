@@ -23,16 +23,9 @@ export default{
     },
     mounted() {
         const self = this
-
-        console.log(this.$el)
-
-        console.log(document.getElementById("CSound").play())
-        setTimeout(function(){
-            console.log(document.getElementById("CSound").play())
-        },3000)
         setTimeout(function(){
             self.$router.push('/question')
-        },10000)
+        },1000000)
     }
 }
 </script>

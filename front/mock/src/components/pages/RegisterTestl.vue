@@ -114,7 +114,7 @@
                 console.log(this.Src);
                 console.log(this.JudgeImage);
                 if ( this.getPlayersNumber === 4){
-                    this.$router.push(`/newage`)
+                    //this.$router.push(`/newage`)
                 }
             }
         },

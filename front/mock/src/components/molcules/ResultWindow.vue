@@ -18,19 +18,19 @@
                         <p class="resultNum">2位</p>
                         <p class="result">P{{this.getRanking[1].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">{{this.getRanking[1].result}}</p>
+                        <p class="heisei">Null</p>
                     </div>
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
                         <p class="result">P{{this.getRanking[2].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">{{this.getRanking[2].result}}</p>
+                        <p class="heisei">Null</p>
                     </div>
                     <div class="resultDetail">
                         <p class="resultNum">2位</p>
                         <p class="result">P{{this.getRanking[3].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">{{this.getRanking[3].result}}</p>
+                        <p class="heisei">NUll</p>
                     </div>
                 </div>
             </div>

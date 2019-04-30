@@ -15,7 +15,7 @@
             </div>
 
             <div class="detail">
-                <p>{{this.problemData[this.getProblemNumber].result}}</p>
+                <p>{{this.problemData[this.getProblemNumber].detail}}</p>
             </div>
         </div>
     </div>
@@ -24,7 +24,8 @@
 <script>
     import ProblemData from '../../assets/json/problems'
     import {
-        mapGetters
+        mapGetters,
+        mapActions
     } from 'vuex'
     export default{
         name:'AnswerWindow',
@@ -39,8 +40,22 @@
         },
         computed:{
             ...mapGetters({
-                getProblemNumber:'getProblemNumber'
+                getProblemNumber:'getProblemNumber',
+            }),
+            ...mapActions({
+                UpdateProblemNumber:'UpdateProblemNumber'
             })
+        },
+        mounted(){
+            const self = this
+            setTimeout(function(){
+                self.UpdateProblemNumber
+                if(this.getProblemNumber=== 16){
+                    self.$router.push('./result')
+                }
+                self.$router.push('./question')
+            },5000)
+
         }
     }
 </script>

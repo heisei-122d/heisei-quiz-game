@@ -4,17 +4,10 @@
     <list default="true" id="4b4183b6-7e0e-45e2-a27e-001f4ef7850f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerScreen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/mock/src/components/pages/answer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/pages/answer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/components/pages/battle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/components/pages/battle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/services/vue.mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/services/vue.mixins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/mock/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/mock/src/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,16 +23,16 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="435">
-                    <caret line="29" column="73" lean-forward="true" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+                  <state relative-caret-position="565">
+                    <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="false">
+            <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testBattle.vue">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="1500">
@@ -62,18 +55,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/services/vue.mixins.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/CountdownTimer.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -82,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="273">
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
                 <element signature="e#694#746#0" expanded="true" />
               </folding>
@@ -95,67 +76,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/result.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-              <folding>
-                <element signature="e#629#674#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/PlayerScreen.vue">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/assets/json/problems.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/PlayerContainer.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding>
-                <element signature="e#273#302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/battle.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="122" column="49" selection-start-line="122" selection-start-column="49" selection-end-line="122" selection-end-column="49" />
-              <folding>
-                <element signature="e#352#407#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="299">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -163,10 +96,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="16" />
+            <state relative-caret-position="435">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
               <folding>
                 <element signature="e#1546#1580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/RegisterImage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testResister.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/answer.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding>
+                <element signature="e#319#374#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,8 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>image</find>
-      <find>judge</find>
       <find>Controller</find>
       <find>components</find>
       <find>0</find>
@@ -200,11 +182,14 @@
       <find>data</find>
       <find>PlayersNumber</find>
       <find>UpdateOnlinePlayer</find>
-      <find>id</find>
       <find>online</find>
       <find>mainbox</find>
       <find>hawaii.mp</find>
       <find>1</find>
+      <find>UpdateProblemNumber</find>
+      <find>人生</find>
+      <find>id</find>
+      <find>rankingArray</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,18 +221,18 @@
         <option value="$PROJECT_DIR$/front/mock/src/assets/json/problems.json" />
         <option value="$PROJECT_DIR$/front/mock/src/components/molcules/StartButton.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/components/pages/testBattle.vue" />
-        <option value="$PROJECT_DIR$/front/mock/src/router.js" />
-        <option value="$PROJECT_DIR$/front/mock/src/components/pages/answer.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/store.js" />
-        <option value="$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue" />
-        <option value="$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue" />
-        <option value="$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerScreen.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/components/molcules/PlayerContainer.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/components/pages/battle.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/services/vue.mixins.js" />
         <option value="$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue" />
         <option value="$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue" />
+        <option value="$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue" />
+        <option value="$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue" />
+        <option value="$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue" />
+        <option value="$PROJECT_DIR$/front/mock/src/router.js" />
+        <option value="$PROJECT_DIR$/front/mock/src/components/pages/answer.vue" />
       </list>
     </option>
   </component>
@@ -426,16 +411,15 @@
       <workItem from="1556097590565" duration="809000" />
       <workItem from="1556103793898" duration="5828000" />
       <workItem from="1556181941783" duration="85023000" />
-      <workItem from="1556403248879" duration="81808000" />
+      <workItem from="1556403248879" duration="84053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174530000" />
+    <option name="totallyTimeSpent" value="176775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="13" width="1239" height="885" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49752474" visible="true" weight="0.35221675" />
       <window_info id="Structure" order="1" sideWeight="0.50247526" side_tool="true" weight="0.27064595" />
@@ -545,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testResister.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/mock/src/views/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -573,44 +550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/RegisterImage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/RegisterButton.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/result.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testBattle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
-          <folding>
-            <element signature="e#897#942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,35 +605,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/answer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1493">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#319#374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/EndRole.vue">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/assets/json/problems.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/PlayerContainer.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -706,23 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="e#1546#1580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -746,6 +645,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="54" column="19" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="54" selection-end-column="19" />
+          <folding>
+            <element signature="e#629#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="118" column="14" lean-forward="true" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/CountdownTimer.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -753,29 +672,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue">
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="73" lean-forward="true" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/QuestionWindow.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="273">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
-            <element signature="e#629#674#0" expanded="true" />
+            <element signature="e#694#746#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/AnswerWindow.vue">
+    <entry file="file://$PROJECT_DIR$/front/mock/src/assets/json/problems.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="299">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/result.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/ResultWindow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
-            <element signature="e#694#746#0" expanded="true" />
+            <element signature="e#1546#1580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/RegisterTestl.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/RegisterImage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testResister.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/testBattle.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+          <folding>
+            <element signature="e#897#942#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/molcules/StartRole.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/mock/src/components/pages/answer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#319#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
