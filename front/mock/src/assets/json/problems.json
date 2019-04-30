@@ -5,119 +5,129 @@
     "problemGroup": 1,
     "problemContent": "ドラゴンボールは平成に公開された",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"1984に初めて公開されました。"
   },
   {
     "id": 2,
     "ageGroup": 1,
-    "problemContent": "アトムは平成に公開された",
+    "problemContent": "鉄腕アトムは平成に公開された",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"鉄腕アトムが最初に公開されたのは1952年です。"
   },
   {
     "id": 3,
     "ageGroup": 2,
-    "problemContent": "ブラックジャックは平成に公開された",
+    "problemContent": "アニメ、ブラックジャックは平成に公開された",
     "image": "",
-    "answer": 1
+    "answer": 1,
+    "detail":"2003年にアニメ化して公開されました。"
   },
   {
     "id": 4,
     "ageGroup": 2,
     "problemContent": "ゲーム「ファイナルファンタジー」第１作は平成に発売された",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"1987年に公開されました"
   },
   {
     "id": 5,
     "ageGroup": 3,
     "problemContent": "ゲーム「ポケットモンスター」第１作は平成に発売された",
     "image": "",
-    "answer": 1
+    "answer": 1,
+    "detail":"1998年に公開されました"
   },
   {
     "id": 6,
     "ageGroup": 3,
     "problemContent": "トムアンドジェリーは平成に公開された",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"1964年に公開されました"
   },
   {
     "id": 7,
     "ageGroup": 1,
     "problemContent": "「平成おじさん」のメガネの色は白",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"「平成おじさん」のメガネの色は"
   },
   {
     "id": 8,
     "ageGroup": 1,
     "problemContent": "ワクワクさんの相棒のゴロリは犬である",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"ゴロリはくまです"
   },
   {
     "id": 9,
     "ageGroup": 1,
     "problemContent": "人生ゲームは平成に発売された",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"人生ゲームは古くからありました。"
+
   },
   {
     "id": 10,
     "ageGroup": 1,
     "problemContent": "ファミコンで発売された最後のゲームソフトは「高橋名人の冒険島VI」である。(国内/任天堂公認)",
     "image": "",
-    "answer": 1
+    "answer": 1,
+    "detail":""
   },
   {
     "id": 11,
     "ageGroup": 1,
     "problemContent": "マクドナルド第1号店は平成に建てられた",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"ちなみにスタバ第1号店は平成に建てられました"
   },
   {
     "id": 12,
     "ageGroup": 1,
     "problemContent": "一番早くできた検索エンジンはGoogleである",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"一番早くできた検索エンジンはYahoo!です"
   },
   {
     "id": 13,
     "ageGroup": 2,
     "problemContent": "カラオケは平成の世紀の大発明である",
     "image": "",
-    "answer": 0
+    "answer": 0,
+    "detail":"カラオケは昭和からありました"
   },
   {
     "id": 14,
     "ageGroup": 2,
     "problemContent": "平成にはプラミアムフライデーがありるが、ハッピーマンデーも存在する。",
     "image": "",
-    "answer": 1
+    "answer": 1,
+    "detail":"国民の祝日の一部を月曜日に移し、土曜日・日曜日と合わせ三連休にする制度です。"
   },
   {
     "id":15 ,
     "ageGroup": 2,
-    "problemContent": "ユニバーサル・スタジオ・ジャパンは平成に開演された",
+    "problemContent": "ユニバーサル・スタジオ・ジャパンは平成に開園された",
     "image": "",
-    "answer": 1
-  },
-  {
-    "id":15 ,
-    "ageGroup": 3,
-    "problemContent": "平成で一番ホームランを打ったプロ野球選手は小笠原である",
-    "image": "",
-    "answer": 0
+    "answer": 1,
+    "detail":"USJは東京ディズニーシーを同じ年に開園しました。"
   },
   {
     "id":15 ,
     "ageGroup": 3,
     "problemContent": "次の元号は令和である",
     "image": "",
-    "answer": 1
+    "answer": 1,
+    "detail":"新元号は令和であります　"
   }
   
 ]
