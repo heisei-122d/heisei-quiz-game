@@ -47,12 +47,13 @@
         mounted: function() {
             const self = this
             setTimeout(function(){
-                if(self.problemNumber === 15){
-                    // self.$router.push('/result')
-                }  else if(self.problemNumber%5 === 0 ) {
-                    // self.$router.push('/newage')
-                } else {
-                    // self.$router.push('/question')
+                console.log('--------------================')
+                console.log('--------------================')
+                console.log(self.getProblemNumber)
+                if(self.getProblemNumber === 15){
+                     self.$router.push('/result')
+                }  else {
+                     self.$router.push('/question')
                 }
             },5000)
             // 背景動画の再生
@@ -79,7 +80,7 @@
                 // of different video formats to add
                 src: [
                     {
-                        src: './hawaii.mp4',
+                        src: './back3.mp4',
                         type: 'video/mp4'
                     },
                 ],
@@ -95,8 +96,6 @@
             // ランキングを作るところ
 
 
-
-            this.$store.dispatch('UpdateProblemNumber');
             console.log('--------------------')
             // console.log(this.getProblemNumber)
         }

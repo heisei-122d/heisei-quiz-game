@@ -25,7 +25,7 @@ export default{
         const self = this
         setTimeout(function(){
             self.$router.push('/question')
-        },1000000)
+        },5000)
     }
 }
 </script>

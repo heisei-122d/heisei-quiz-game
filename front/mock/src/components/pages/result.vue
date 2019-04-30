@@ -27,10 +27,6 @@
         methods:{
         },
         mounted() {
-            const self = this
-            setTimeout(function(){
-                // self.$router.push('/')
-            },10000)
             // 背景動画の再生
             let bv = new window.Bideo();
             console.log(bv);
@@ -55,7 +51,7 @@
                 // of different video formats to add
                 src: [
                     {
-                        src: './hawaii.mp4',
+                        src: './heisei1.mp4',
                         type: 'video/mp4'
                     },
                 ],

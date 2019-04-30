@@ -9,9 +9,9 @@
             <div class="results">
                 <div class="resultDetailKing">
                         <p class="resultNum">1位</p>
-                        <p class="result">P{{this.getRanking[0].id}}</p>
+                        <p class="result">P{{this.getPlayersDetails[0].id}}</p>
                         <p class="heiseiText">平成度</p>
-                        <p class="heisei">{{this.getRanking[0].result}}</p>
+                        <p class="heisei">{{this.getPlayersDetails[0].result}}</p>
                 </div>
                 <div class="detailBox">
                     <div class="resultDetail">

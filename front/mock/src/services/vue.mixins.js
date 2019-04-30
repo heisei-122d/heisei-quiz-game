@@ -11,7 +11,6 @@ export const Mixin = {
     methods: {
        SplidWord (word){
            let getMessage = this.SplidWord(message.payloadString);
-           console.log(getMessage)
            return word.split("_");
        }
     },
@@ -54,8 +53,6 @@ export const Mixin = {
             let nowTime = Date.now();
             if (nowTime - beforeArrivedTime < 100) return;
             beforeArrivedTime = nowTime;
-            console.log(message.payloadString);
-            console.log(message.payloadString.split("_"));
 
             let array = message.payloadString.split("_");
 
@@ -66,24 +63,19 @@ export const Mixin = {
                 sentMessageButton: array[0]
             })
 
-            console.log(this.router)
+
 
             // クエスチョン画面での挙動
             // クエスチョンボタンで送られてきた回答がもし正解だったら、dispatchする。
             //
 
-            console.log(router.history.current.name)
-            console.log('this is mixin')
-            console.log(store.getters.getProblemNumber)
-            console.log('answer'+typeof ProblemData[store.getters.getProblemNumber].answer)
-            console.log( typeof array[0])
 
 
             if (router.history.current.name === 'question') {
                 if (ProblemData[store.getters.getProblemNumber].answer === Number(array[0])) {
                     console.log('正解しました')
                     store.dispatch('UpdateIncrementPlayersResult',{
-                        id:array[1]
+                        id:array[0]
                     })
                 }
                 this.$router.push('./answer')

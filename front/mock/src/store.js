@@ -139,13 +139,11 @@ export default new Vuex.Store({
     },
     decideRanking(state){
       const Data = getter.getPlayersDetails
-      console.log(Data)
 
       Data.sort(function (x,y) {
         if (x.result < y.result) return -1;
         if (x.result > y.result) return 1;
       })
-      console.log(data)
       state.ranking = Data
     }
   },
