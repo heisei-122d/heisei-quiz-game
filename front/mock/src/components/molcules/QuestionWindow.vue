@@ -141,7 +141,7 @@
     list-style: none;
     background-color: transparent;
     position: relative;
-    top: -100%;
+    top: -50%;
     height:100%;
     width: 60%;
     margin: auto 0 0 auto;

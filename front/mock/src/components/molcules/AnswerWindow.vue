@@ -129,8 +129,9 @@
     font-weight:300;
     padding: 2%;
     margin: 5%;
+    font-weight: bold;
     border-radius: 10px;
-    background-color:rgba(255, 0, 0, 0.692) ;
+    background-color:rgba(48, 48, 48, 0.692) ;
 }
 
 #mainUp{
